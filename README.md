@@ -72,10 +72,18 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 
 ## Build Data Pipeline
 
+Not Updated Yet
+
 ## Result of Pipeline
+
+Not Updated Yet
 
 # **5. Report**
 
 ## 5.1. Data Modelling
 
+Not Updated Yet
+
 ## 5.2. Report
+
+Not Updated Yet
