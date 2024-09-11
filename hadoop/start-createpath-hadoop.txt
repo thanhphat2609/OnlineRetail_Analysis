@@ -1,6 +1,14 @@
 # execute bash
 docker exec -it hadoop-namenode-1 /bin/bash
 
-
 # create bash
 hdfs dfs -mkdir -p /Online_Retail_Analysis/datalake
+
+# Move file from local to container
+docker cp N:/BigData/Online_Retail_Analysis/include/dataset/Online_Retail.csv hadoop-namenode-1:/local_data/online_retail.csv
+
+# Move file from local container to hdfs
+hdfs dfs -put local_data/online_retail.csv /Online_Retail_Analysis/datalake/online_retail.csv
+
+# List some data
+hdfs dfs -cat /Online_Retail_Analysis/datalake/online_retail.csv | head
