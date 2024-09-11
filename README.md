@@ -33,7 +33,9 @@ _Table of Contents_
 
 - **Soda**: Soda is a data quality monitoring tool that helps you maintain the integrity of your data. It allows you to set up and run automated data quality checks to detect and alert you to anomalies or issues in your data pipelines. Soda ensures that your data meets quality standards throughout the ETL process, just like a quality control system in manufacturing.
 
-- **Google Cloud Platform (GCP)**: Google Cloud Platform is a comprehensive cloud services suite that provides infrastructure and tools for deploying, managing, and scaling applications and data pipelines. GCP offers powerful cloud-based resources such as BigQuery for data warehousing and Compute Engine for scalable computing, providing the backbone for your data operations.
+- **Hadoop (HDFS)**: Hadoop is an open-source framework designed for storing and processing large volumes of data across distributed clusters. The Hadoop Distributed File System (HDFS) is a key component of Hadoop, providing scalable and fault-tolerant storage by breaking data into blocks and distributing them across multiple nodes. This architecture ensures high availability and efficient data management, making it ideal for handling big data workloads.
+
+- **Power BI Desktop**: Power BI Desktop is a powerful business intelligence tool from Microsoft that enables users to create interactive reports and visualizations. It provides a user-friendly interface for connecting to various data sources, transforming data, and building insightful dashboards. With its robust data modeling and visualization capabilities, Power BI Desktop helps organizations turn raw data into actionable insights, facilitating better decision-making and data-driven strategies.
 
 - **Apache Airflow**: Apache Airflow is a workflow automation tool that allows you to define, schedule, and monitor complex data workflows. It acts like a task scheduler for your data engineering processes, ensuring that each step in your pipeline is executed in the correct order and dependencies are managed efficiently.
 
