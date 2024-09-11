@@ -53,7 +53,7 @@ _Table of Contents_
 - **Analytics**: This last step we will use tools and techniques to analyze the data in the data warehouse, such as: Power BI, Tableau, ..
 
 ## 2.2. Physical Architecture
-![image](https://github.com/user-attachments/assets/c8d27773-84f9-4e74-bd08-39a9278f757f)
+![dockerarchitecture](https://github.com/user-attachments/assets/9251b5b8-a0af-42e6-a681-b1bf8d6115d3)
 
 # **3. Dataset**
 
