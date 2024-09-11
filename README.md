@@ -31,7 +31,7 @@ _Table of Contents_
 
 - **Astro CLI**: Astro CLI is a command-line interface designed for managing and deploying data workflows within your data engineering ecosystem. It streamlines the orchestration of complex data tasks and workflows, similar to how a conductor manages an orchestra, ensuring that each data task is executed in the correct sequence and dependencies are effectively handled.
 
-- **Soda**: Soda is a data quality monitoring tool that helps you maintain the integrity of your data. It allows you to set up and run automated data quality checks to detect and alert you to anomalies or issues in your data pipelines. Soda ensures that your data meets quality standards throughout the ETL process, just like a quality control system in manufacturing.
+- **Great Expectation**: Great Expectation is a data quality monitoring tool that helps you maintain the integrity of your data. It allows you to set up and run automated data quality checks to detect and alert you to anomalies or issues in your data pipelines. Great Expectation ensures that your data meets quality standards throughout the ETL process, just like a quality control system in manufacturing.
 
 - **Hadoop (HDFS)**: Hadoop is an open-source framework designed for storing and processing large volumes of data across distributed clusters. The Hadoop Distributed File System (HDFS) is a key component of Hadoop, providing scalable and fault-tolerant storage by breaking data into blocks and distributing them across multiple nodes. This architecture ensures high availability and efficient data management, making it ideal for handling big data workloads.
 
@@ -53,7 +53,7 @@ _Table of Contents_
 - **Analytics**: This last step we will use tools and techniques to analyze the data in the data warehouse, such as: Power BI, Tableau, ..
 
 ## 2.2. Physical Architecture
-![dockerarchitecture](https://github.com/user-attachments/assets/1f4883b8-8568-435b-a4ec-6fcfa661b18e)
+![dockerarchitecture](https://github.com/user-attachments/assets/46e6d41d-dd89-48b5-82a6-3decda246389)
 
 # **3. Dataset**
 
@@ -75,7 +75,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 
 ## Build Data Pipeline
 
-Not Updated Yet
+- Can not use HDFS as Data Storage right now. **Error**: No connection adapters were found for 'hdfs://hdfs-namenode:9000/webhdfs/v1/'
 
 ## Result of Pipeline
 

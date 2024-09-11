@@ -37,7 +37,7 @@ def create_data_pipeline_dag(dagid):
     # Define the task
     run_script_task = BashOperator(
         task_id='Source_Quality_Check',
-        bash_command='python N:/BigData/Online_Retail_Analysis/include/soda/check/source_quality.py',
+        bash_command='python /usr/local/airflow/include/greate_expectation/source_quality.py',
         dag = dag
     )
 
