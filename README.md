@@ -75,7 +75,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 
 ## Build Data Pipeline
 
-- Can not use HDFS as Data Storage right now. **Error**: No connection adapters were found for 'hdfs://hdfs-namenode:9000/webhdfs/v1/'
+- Can not use HDFS as Data Storage right now. **Error**: No connection adapters were found for 'hdfs://hdfs-namenode:9000/webhdfs/v1/' => Using Local in path: /include/dataset
 
 ## Result of Pipeline
 

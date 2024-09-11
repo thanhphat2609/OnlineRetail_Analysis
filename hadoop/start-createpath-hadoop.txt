@@ -1,5 +1,6 @@
 # execute bash
 docker exec -it hadoop-namenode-1 /bin/bash
+docker exec -u root -t -i oneline-retail-project_5f80e5-triggerer-1 /bin/bash
 
 # create bash
 hdfs dfs -mkdir -p /Online_Retail_Analysis/datalake
