@@ -16,5 +16,6 @@ interact = interact_db()
 
 try:
     connection = interact.connect_mssql(database, server, username, password)
+    print("Connection Successfully!!!")
 except Exception as e:
     print("Connection Failed by: ", e)
