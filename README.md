@@ -15,8 +15,8 @@ _Table of Contents_
 - [**3. Dataset**](#3-dataset)
 
 - [**4. Data Pipeline**](#4-data-pipeline)
-  * [4.1. Build Data Pipeline](#51-build-data-pipeline)
-  * [4.2. Result of Pipeline](#52-result-of-pipeline)
+  * [4.1. Build Data Pipeline](#41-build-data-pipeline)
+  * [4.2. Result of Pipeline](#42-result-of-pipeline)
 
 - [**5. Report**](#5-report)
   * [5.1. Data Modelling](#51-data-modelling)
