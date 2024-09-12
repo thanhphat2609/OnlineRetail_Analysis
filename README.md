@@ -73,7 +73,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 
 # **4. Data Pipeline**
 
-## Build Data Pipeline
+## 4.1. Build Data Pipeline
 
 - Can not use HDFS as Data Storage right now. **Error**: No connection adapters were found for 'hdfs://hdfs-namenode:9000/webhdfs/v1/' => Using Local in path: /include/dataset
 
@@ -83,7 +83,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 - Variable in Airflow Orchestration:
 ![image](https://github.com/user-attachments/assets/8f08347e-f416-4a10-84fd-0aa030994e2f)
 
-## Result of Pipeline
+## 4.2. Result of Pipeline
 
 Not Updated Yet
 
