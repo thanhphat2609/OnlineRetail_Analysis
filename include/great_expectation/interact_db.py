@@ -27,8 +27,7 @@ class interact_db:
 
         conn = pyodbc.connect(connectionString)
 
-        return conn
-
+        return conn, connectionString
 
     def insert_staging_date(connect_sql):
         
