@@ -39,7 +39,7 @@ try:
         # Create table name by pattern: "retail_sales_2024_09_19"
         schema_name = "STG"
         executionDate = datetime.now().strftime("%Y_%m_%d")
-        table_name = f"{schema_name}.retail_sales_{executionDate}"
+        table_name = f"retail_sales_{executionDate}"
 
         # Create table in STG schema
         df.to_sql(name=table_name, con=engine, schema=schema_name, if_exists='replace', index=False)
