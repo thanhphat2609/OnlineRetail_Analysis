@@ -16,7 +16,6 @@ class interact_db:
                 Connection to Microsoft SQL Server
         """
 
-
         import pyodbc
 
         SERVER = server

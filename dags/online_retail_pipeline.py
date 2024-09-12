@@ -35,13 +35,20 @@ def create_data_pipeline_dag(dagid):
     )
 
     # Define the task
-    run_script_task = BashOperator(
+    source_quality_check = BashOperator(
         task_id='Source_Quality_Check',
-        bash_command='python /usr/local/airflow/include/greate_expectation/source_quality.py',
+        bash_command='python /usr/local/airflow/include/great_expectation/data_source_quality.py',
         dag = dag
     )
 
-    run_script_task
+
+    create_staging_table = BashOperator(
+        task_id='Create_Staging_Table',
+        bash_command='python /usr/local/airflow/include/great_expectation/create_staging_table.py',
+        dag = dag
+    )
+
+    source_quality_check >> create_staging_table
 
     # Return the created DAG
     return dag
