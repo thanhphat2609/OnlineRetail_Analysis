@@ -12,7 +12,7 @@ _Table of Contents_
 
 - [**3. Dataset**](#3-dataset)
 
-- [**4. Data Pipeline**](#4-data-pipeline)
+- [**4. End to End Solution**](#4-end-to-end-solution)
   * [4.1. Build Data Pipeline](#41-build-data-pipeline)
   * [4.2. Result of Pipeline](#42-result-of-pipeline)
 
@@ -81,7 +81,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 | Country       | Country name. Nominal, the name of the country where each customer resides.                                  |
 
 
-# **4. Data Pipeline**
+# **4. End to End Solution**
 
 ## 4.1. Build Data Pipeline
 
