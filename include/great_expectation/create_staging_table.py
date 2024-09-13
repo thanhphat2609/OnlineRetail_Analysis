@@ -44,6 +44,11 @@ try:
         # executionDate = "2024_09_05"
         table_name = f"retail_sales"
 
+        DROP_TABLE_QUERY = "DROP TABLE STG.{table_name}"
+        cursor.execute(DROP_TABLE_QUERY)
+        connection.commit()
+
+
         # Create table in STG schema
         CREATE_TABLE_QUERY = f"""
                     CREATE TABLE STG.{table_name}(
