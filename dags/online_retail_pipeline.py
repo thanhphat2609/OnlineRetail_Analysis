@@ -23,6 +23,7 @@ first DAG tutorial: https://www.astronomer.io/docs/learn/get-started-with-airflo
 from airflow import DAG
 # with operator need to set dag = dag for relationships
 from airflow.operators.bash import BashOperator
+from airflow.utils.task_group import TaskGroup
 
 def create_data_pipeline_dag(dagid):
 
@@ -48,13 +49,49 @@ def create_data_pipeline_dag(dagid):
         dag = dag
     )
 
-    create_dwh_table = BashOperator(
+    with TaskGroup("dimension_group", dag=dag) as dimension_group:
+
+        # Create dimCountry
+        dim_country = BashOperator(
+            task_id='Create_DWH_Table',
+            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimCountry.sql',
+            dag = dag
+        )
+
+        dim_customer = BashOperator(
+            task_id='Create_DWH_Table',
+            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimCustomer.sql',
+            dag = dag
+        )
+
+        dim_datetime = BashOperator(
+            task_id='Create_DWH_Table',
+            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimDateTime.sql',
+            dag = dag
+        )
+
+        dim_products = BashOperator(
+            task_id='Create_DWH_Table',
+            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimProducts.sql',
+            dag = dag
+        )
+
+        # dim_country >> dim_customer >> dim_datetime >> dim_products
+
+    fact_invoice = BashOperator(
         task_id='Create_DWH_Table',
-        bash_command='dbt run --project-dir /usr/local/airflow/include/dbt',
+        bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/factInvoice.sql',
         dag = dag
     )
 
-    source_quality_check >> create_staging_table >> create_dwh_table
+    # Data Modelling check Quality
+    model_quality_check = BashOperator(
+        task_id='Source_Quality_Check',
+        bash_command='python /usr/local/airflow/include/great_expectation/data_model_quality.py',
+        dag = dag
+    )
+
+    source_quality_check >> create_staging_table >> dimension_group >> fact_invoice >> model_quality_check
 
     # Return the created DAG
     return dag

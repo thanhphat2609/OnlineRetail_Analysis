@@ -21,47 +21,95 @@ def check_local_file(file_path):
     return os.path.isfile(file_path)
 
 # Specify the file path
+    # file path for local check
+# file_path = "../dataset/Online_Retail.csv"
+    # file path for Docker
 file_path = '/usr/local/airflow/include/dataset/Online_Retail.csv'
 
 # Task 1: Check exits File
 if check_local_file(file_path):
-    message = f"""Task 1: Check file exist -> Success 
-File: {file_path} exists"""
+    message_task_1 = f"""Task 1: Check file exists -> Success. File: {file_path} exists"""
     
 else:
-    message = f"""Task 1: Check file exist -> Failed 
-File: {file_path} does not exists"""
+    message_task_1 = f"""Task 1: Check file exists -> Failed. File: {file_path} does not exists"""
+
+# Using different encodings for reading raw_dataset
+try:
+    df = pd.read_csv(file_path, encoding='utf-8')
+except UnicodeDecodeError:
+    try:
+        df = pd.read_csv(file_path, encoding='ISO-8859-1')
+    except UnicodeDecodeError:
+        df = pd.read_csv(file_path, encoding='cp1252')
+
+# Prepare for great_expectations quality
+data_source = context.data_sources.add_pandas("pandas")
+data_asset = data_source.add_dataframe_asset(name="pd dataframe asset")
+
+batch_definition = data_asset.add_batch_definition_whole_dataframe("batch definition")
+batch = batch_definition.get_batch(batch_parameters={"dataframe": df})
 
 
 # Task 2: Check schema of the data source
-try:
-    validator = context.sources.pandas_default.read_csv(file_path, encoding='utf-8')
-except UnicodeDecodeError:
-    try:
-        df = context.sources.pandas_default.read_csv(file_path, encoding='ISO-8859-1')
-    except UnicodeDecodeError:
-        df = context.sources.pandas_default.read_csv(file_path, encoding='cp1252')
-# Expect the columns to be from the expected column_set
-expected_column_set = ["InvoiceNo", "StockCode", "Description", "Quantity", "InvoiceDate", "UnitPrice", "CustomerID", "Country"]
-validator.expect_table_columns_to_match_set(expected_column_set, exact_match=True)
+
+expected_schema = gx.expectations.ExpectTableColumnsToMatchSet(
+    column_set= ["InvoiceNo", "StockCode", "Description", "Quantity", 
+                 "InvoiceDate", "UnitPrice", "CustomerID", "Country"],
+    exact_match=True)
 
 
 # Task 3: Check null value
-validator.expect_column_values_to_not_be_null(column="InvoiceNo")
-validator.expect_column_values_to_not_be_null(column="CustomerID")
-validator.expect_column_values_to_not_be_null(column="StockCode")
+expected_invoice_notnull = gx.expectations.ExpectColumnValuesToNotBeNull(
+                                                column="InvoiceNo")
 
+expected_cusid_notnull = gx.expectations.ExpectColumnValuesToNotBeNull(
+                                                column="CustomerID")
+
+expected_stockcode_notnull = gx.expectations.ExpectColumnValuesToNotBeNull(
+                                                column="StockCode")
 
 
 # Run the validator
-validation_results = validator.validate()
+
+validation_check = [expected_schema, expected_invoice_notnull, expected_cusid_notnull, expected_stockcode_notnull]
+validation_results = []
+
+for task_check in validation_check:
+    validation = batch.validate(task_check)
+    validation_results.append(validation)
+
+# Creating task messages
+task_messages = []
+
+for idx, result in enumerate(validation_results, start=2):
+    type_check = result["expectation_config"]["type"]
+    column = result["expectation_config"]["kwargs"].get("column", "N/A")
+    success = result["success"]
+    
+    if success:
+        if type_check == "expect_table_columns_to_match_set":
+            message = f"Task {idx}: Check schema. All column match -> Success"
+        else:
+            message = f"Task {idx}: Check null for column: {column} -> Success"
+    else:
+        if type_check == "expect_table_columns_to_match_set":
+            message = f"Task {idx}: Check schema. All column not match -> Failed"
+        else:
+            message = f"Task {idx}: Check null for column for column: {column} -> Failed"
+    
+    task_messages.append(message)
+
+# Combine file check message with task messages
+final_message = f"{message_task_1}\n" + "\n".join(task_messages)
+
+# print(final_message)
 
 subject = "Data Quality Check for Source"
 
 alert_quality.send_email(
     body= f"""Subject: {subject}
 
-{message}. 
+{final_message}. 
 
 Please review the attached report and fix the error.""",
 
