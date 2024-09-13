@@ -6,3 +6,6 @@ logs/
 .venv
 airflow.db
 airflow.cfg
+node_modules
+tmp/
+dist/

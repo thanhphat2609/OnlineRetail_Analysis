@@ -1,0 +1,14 @@
+[0m14:58:46.602811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DF7E7B2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DF7E33ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DF7E30410>]}
+
+
+============================== 14:58:46.608772 | 8acd0474-edea-4ca8-a4f5-b5cacab30f1f ==============================
+[0m14:58:46.608772 [info ] [MainThread]: Running with dbt=1.7.17
+[0m14:58:46.610278 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Thanh Phat\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:58:46.612287 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path N:\BigData\Online_Retail_Analysis\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:58:46.617251 [debug] [MainThread]: Command `dbt run` failed at 14:58:46.617251 after 0.13 seconds
+[0m14:58:46.618280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DF7E25690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DF7E8AA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DF7E8A810>]}
+[0m14:58:46.619264 [debug] [MainThread]: Flushing usage events

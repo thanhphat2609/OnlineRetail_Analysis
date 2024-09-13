@@ -1,0 +1,14 @@
+online_retail_project:
+  target: dwh
+  outputs: 
+    dwh:
+      type: sqlserver
+      driver: 'ODBC Driver 18 for SQL Server'
+      server: online-retail.database.windows.net
+      port: 1433
+      database: online-retail-kaggle
+      schema: DWH
+      user: adminsql  
+      password: Thanhphat2609@
+  
+  

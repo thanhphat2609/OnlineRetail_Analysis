@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: online_retail
+    database: online-retail-kaggle
+    schema: dbo
+    tables:
+      - name: country
+
+  - name: online_retail_stg
+    database: online-retail-kaggle
+    schema: STG
+    tables:
+      - name: retail_sales

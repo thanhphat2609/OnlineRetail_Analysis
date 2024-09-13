@@ -4,17 +4,10 @@ from datetime import datetime
 import subprocess
 from airflow.models import Variable
 
-sys.path.append("/usr/local/airflow/include/great_expectation")
 from mail_alert import *
 password = Variable.get("my_outlook_password")
 
 alert_quality = mail_alert()
-
-# def install_package(package_name):
-#     subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
-
-# # Install the package
-# install_package("great-expectations")
 
 import great_expectations as gx
 
@@ -30,7 +23,7 @@ def check_local_file(file_path):
 # Specify the file path
 file_path = '/usr/local/airflow/include/dataset/Online_Retail.csv'
 
-# Run the check
+# Task 1: Check exits File
 if check_local_file(file_path):
     message = f"""Task 1: Check file exist -> Success 
 File: {file_path} exists"""
@@ -38,6 +31,30 @@ File: {file_path} exists"""
 else:
     message = f"""Task 1: Check file exist -> Failed 
 File: {file_path} does not exists"""
+
+
+# Task 2: Check schema of the data source
+try:
+    validator = context.sources.pandas_default.read_csv(file_path, encoding='utf-8')
+except UnicodeDecodeError:
+    try:
+        df = context.sources.pandas_default.read_csv(file_path, encoding='ISO-8859-1')
+    except UnicodeDecodeError:
+        df = context.sources.pandas_default.read_csv(file_path, encoding='cp1252')
+# Expect the columns to be from the expected column_set
+expected_column_set = ["InvoiceNo", "StockCode", "Description", "Quantity", "InvoiceDate", "UnitPrice", "CustomerID", "Country"]
+validator.expect_table_columns_to_match_set(expected_column_set, exact_match=True)
+
+
+# Task 3: Check null value
+validator.expect_column_values_to_not_be_null(column="InvoiceNo")
+validator.expect_column_values_to_not_be_null(column="CustomerID")
+validator.expect_column_values_to_not_be_null(column="StockCode")
+
+
+
+# Run the validator
+validation_results = validator.validate()
 
 subject = "Data Quality Check for Source"
 

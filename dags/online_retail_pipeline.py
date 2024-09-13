@@ -48,7 +48,13 @@ def create_data_pipeline_dag(dagid):
         dag = dag
     )
 
-    source_quality_check >> create_staging_table
+    create_dwh_table = BashOperator(
+        task_id='Create_DWH_Table',
+        bash_command='dbt run --project-dir /usr/local/airflow/include/dbt',
+        dag = dag
+    )
+
+    source_quality_check >> create_staging_table >> create_dwh_table
 
     # Return the created DAG
     return dag
