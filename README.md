@@ -1,7 +1,5 @@
 # Online Retail Analysis
 
-Certainly! Here’s a table of contents formatted in a similar style to the example you provided:
-
 ---
 
 _Table of Contents_
