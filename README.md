@@ -55,6 +55,7 @@ _Table of Contents_
 ## 2.2. Physical Architecture
 ![dockerarchitecture](https://github.com/user-attachments/assets/46e6d41d-dd89-48b5-82a6-3decda246389)
 
+
 # **3. Dataset**
 
 Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.com/datasets/tunguz/online-retail)
@@ -78,7 +79,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 - Can not use **HDFS as Data Storage** right now. **Error**: No connection adapters were found for 'hdfs://hdfs-namenode:9000/webhdfs/v1/' => Using Local in path: /include/dataset
 
 - **Data Pipeline in Airflow**:
-
+![image](https://github.com/user-attachments/assets/fbebbdff-d437-4b05-b10b-59060a4b2692)
 
 - **Variable in Airflow Orchestration**:
 ![image](https://github.com/user-attachments/assets/8f08347e-f416-4a10-84fd-0aa030994e2f)

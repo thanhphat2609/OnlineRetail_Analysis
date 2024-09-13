@@ -86,7 +86,7 @@ def create_data_pipeline_dag(dagid):
 
     # Data Modelling check Quality
     model_quality_check = BashOperator(
-        task_id='Source_Quality_Check',
+        task_id='Model_Quality_Check',
         bash_command='python /usr/local/airflow/include/great_expectation/data_model_quality.py',
         dag = dag
     )
