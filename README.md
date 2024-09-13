@@ -55,6 +55,17 @@ _Table of Contents_
 ## 2.2. Physical Architecture
 ![dockerarchitecture](https://github.com/user-attachments/assets/46e6d41d-dd89-48b5-82a6-3decda246389)
 
+- **Source Data (CSV from Kaggle)**: The project sources data from a Kaggle Online Retail dataset in CSV format, representing the initial stage.
+
+- **Data Storage (Hadoop HDFS)**: The ingested CSV data is stored in a data lake, leveraging Hadoop for distributed storage, allowing scalability and fault tolerance. The storage layer is named Online_Retail_Analysis.
+
+- **Orchestration Layer**: This layer manages workflow automation, data quality checks and data transformation using **Python, Great_Expectations, Data Build Tools (DBT)**.
+
+- **Reporting Layer**: The transformed data is pushed to an SQL database using SSMS (SQL Server Management Studio) for querying.Power BI then accesses this structured data for generating insights and reports, allowing stakeholders to visualize and make decisions based on the processed data.
+
+- **Containerization with Docker**: The entire setup is containerized using Docker, ensuring portability and consistency across different environments.
+
+=> This architecture streamlines the ETL process, enabling automated orchestration, reliable data quality, efficient storage, and powerful reporting capabilities for data-driven decisions.
 
 # **3. Dataset**
 
