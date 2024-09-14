@@ -38,43 +38,34 @@ else:
 client_hdfs = InsecureClient('http://hdfs-namenode:9870', user='thanhphat')
 
 with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding = 'ISO-8859-1') as reader:
-    df = pd.read_csv(reader,index_col=0)
+    validator = context.sources.pandas_default.read_csv(reader)
 
-# Prepare for great_expectations quality
-data_source = context.data_sources.add_pandas("pandas")
-data_asset = data_source.add_dataframe_asset(name="pd dataframe asset")
+# # Prepare for great_expectations quality
+# data_source = context.data_sources.add_pandas("pandas")
+# data_asset = data_source.add_dataframe_asset(name="pd dataframe asset")
 
-batch_definition = data_asset.add_batch_definition_whole_dataframe("batch definition")
-batch = batch_definition.get_batch(batch_parameters={"dataframe": df})
+# batch_definition = data_asset.add_batch_definition_whole_dataframe("batch definition")
+# batch = batch_definition.get_batch(batch_parameters={"dataframe": df})
 
 
 # Task 2: Check schema of the data source
+col_check = ["InvoiceNo", "StockCode", "Description", "Quantity", 
+                 "InvoiceDate", "UnitPrice", "CustomerID", "Country"]
 
-expected_schema = gx.expectations.ExpectTableColumnsToMatchSet(
-    column_set= ["InvoiceNo", "StockCode", "Description", "Quantity", 
-                 "InvoiceDate", "UnitPrice", "CustomerID", "Country"],
-    exact_match=True)
+validator.expect_table_columns_to_match_set(col_check, exact_match=True)
 
 
 # Task 3: Check null value
-expected_invoice_notnull = gx.expectations.ExpectColumnValuesToNotBeNull(
-                                                column="InvoiceNo")
-
-expected_cusid_notnull = gx.expectations.ExpectColumnValuesToNotBeNull(
-                                                column="CustomerID")
-
-expected_stockcode_notnull = gx.expectations.ExpectColumnValuesToNotBeNull(
-                                                column="StockCode")
+validator.expect_column_values_to_not_be_null(column="InvoiceNo")
+validator.expect_column_values_to_not_be_null(column="CustomerID")
+validator.expect_column_values_to_not_be_null(column="StockCode")
 
 
 # Run the validator
 
-validation_check = [expected_schema, expected_invoice_notnull, expected_cusid_notnull, expected_stockcode_notnull]
-validation_results = []
+validation_results = validator.validate()
 
-for task_check in validation_check:
-    validation = batch.validate(task_check)
-    validation_results.append(validation)
+# print(validation_results)
 
 # Creating task messages
 task_messages = []
@@ -100,18 +91,18 @@ for idx, result in enumerate(validation_results, start=2):
 # Combine file check message with task messages
 final_message = f"{message_task_1}\n" + "\n".join(task_messages)
 
-# print(final_message)
+print(final_message)
 
-subject = "Data Quality Check for Source"
+# subject = "Data Quality Check for Source"
 
-alert_quality.send_email(
-    body= f"""Subject: {subject}
+# alert_quality.send_email(
+#     body= f"""Subject: {subject}
 
-{final_message}. 
+# {final_message}. 
 
-Please review the attached report and fix the error.""",
+# Please review the attached report and fix the error.""",
 
-    to_email="20520270@gm.uit.edu.vn",
+#     to_email="20520270@gm.uit.edu.vn",
 
-    password=password
-)
+#     password=password
+# )
