@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 from datetime import datetime
 import subprocess
+from hdfs import InsecureClient
 from airflow.models import Variable
 
 from mail_alert import *
@@ -33,14 +34,11 @@ if check_local_file(file_path):
 else:
     message_task_1 = f"""Task 1: Check file exists -> Failed. File: {file_path} does not exists"""
 
-# Using different encodings for reading raw_dataset
-try:
-    df = pd.read_csv(file_path, encoding='utf-8')
-except UnicodeDecodeError:
-    try:
-        df = pd.read_csv(file_path, encoding='ISO-8859-1')
-    except UnicodeDecodeError:
-        df = pd.read_csv(file_path, encoding='cp1252')
+# To connect to WebHDFS by providing the IP of the HDFS host and the WebHDFS port.
+client_hdfs = InsecureClient('http://hdfs-namenode:9870', user='thanhphat')
+
+with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding = 'ISO-8859-1') as reader:
+    df = pd.read_csv(reader,index_col=0)
 
 # Prepare for great_expectations quality
 data_source = context.data_sources.add_pandas("pandas")

@@ -85,7 +85,13 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 
 ## 4.1. Build Data Pipeline
 
-- Can not use **HDFS as Data Storage** right now. **Error**: No connection adapters were found for 'hdfs://hdfs-namenode:9000/webhdfs/v1/' => Using Local in path: /include/dataset
+- **Connect two container for Docker network**:
+docker network connect hadoop_default oneline-retail-project_5f80e5-webserver-1
+docker network connect hadoop_default oneline-retail-project_5f80e5-scheduler-1
+docker network connect hadoop_default oneline-retail-project_5f80e5-postgres-1
+
+- **HDFS Data Lake Storage**:
+![image](https://github.com/user-attachments/assets/cec9ece6-abc0-411a-bff4-945905314aae)
 
 - **Data Pipeline in Airflow**:
 ![image](https://github.com/user-attachments/assets/fbebbdff-d437-4b05-b10b-59060a4b2692)

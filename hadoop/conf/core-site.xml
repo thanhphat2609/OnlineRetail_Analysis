@@ -21,4 +21,8 @@
 		<name>fs.default.name</name>
 		<value>hdfs://hdfs-namenode:9000</value>
 	</property>
+  <property>
+    <name>hadoop.user.name</name>
+    <value>thanhphat</value>
+</property>
 </configuration>
