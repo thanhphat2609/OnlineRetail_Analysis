@@ -86,8 +86,11 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 ## 4.1. Build Data Pipeline
 
 - **Connect two container for Docker network**:
+
 docker network connect hadoop_default oneline-retail-project_5f80e5-webserver-1
+
 docker network connect hadoop_default oneline-retail-project_5f80e5-scheduler-1
+
 docker network connect hadoop_default oneline-retail-project_5f80e5-postgres-1
 
 - **HDFS Data Lake Storage**:
@@ -101,17 +104,20 @@ docker network connect hadoop_default oneline-retail-project_5f80e5-postgres-1
 
 ## 4.2. Result of Pipeline
 
-- **Pipeline result**
-![image](https://github.com/user-attachments/assets/47071056-0101-4842-a7d9-17cc791df9f1)
+- **PIPELINE result**
+![image](https://github.com/user-attachments/assets/30275f4d-0979-4978-9e40-97946700ecee)
 
-- **Data Quality check for Source**
+- **DATA QUALITY check for SOURCE**
 ![image](https://github.com/user-attachments/assets/9cd81b62-aa6f-4886-8eb8-bfed05144ee5)
 
-- **Staging phase**
+- **STAGING Phase**
+![image](https://github.com/user-attachments/assets/6ce6f301-3c71-4aa4-807e-3d2199b2a386)
 
-- **Data Warehouse phase**
+- **DATA WAREHOUSE Phase**
+![image](https://github.com/user-attachments/assets/0088105c-0431-48ae-9cfc-63c8dad9d1d6)
 
-- **Data Quality check for Data Model**
+- **DATA QUALITY check for Data MODEL**
+
 
 # **5. Report**
 

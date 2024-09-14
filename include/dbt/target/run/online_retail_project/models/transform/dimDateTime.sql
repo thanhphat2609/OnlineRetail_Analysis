@@ -10,19 +10,20 @@ USE [online-retail-kaggle];
         create view "DWH"."dimDateTime__dbt_tmp" as 
 
 -- Create a CTE to extract date and time components
-WITH datetime_cte AS (  
+WITH datetime_cte AS (
   SELECT DISTINCT
     InvoiceDate,
     CASE
-      WHEN LENGTH(InvoiceDate) = 16 THEN
+      WHEN LEN(InvoiceDate) = 16 THEN
         -- Date format: "DD/MM/YYYY HH:MM"
-        PARSE_DATETIME(''%m/%d/%Y %H:%M'', InvoiceDate)
-      WHEN LENGTH(InvoiceDate) <= 14 THEN
+        TRY_CAST(InvoiceDate AS DATETIME)
+      WHEN LEN(InvoiceDate) <= 14 THEN
         -- Date format: "MM/DD/YY HH:MM"
-        PARSE_DATETIME(''%m/%d/%y %H:%M'', InvoiceDate)
+        TRY_CAST(InvoiceDate AS DATETIME)
       ELSE
         NULL
-    END AS date_part,
+    END AS date_part
+  -- Replace the table name accordingly
   -- FROM "online-retail-kaggle"."STG"."retail_sales"
   FROM "online-retail-kaggle"."dbo"."online_retail"
   WHERE InvoiceDate IS NOT NULL
@@ -31,12 +32,12 @@ SELECT
   InvoiceDate,
   CONVERT(BIGINT, HASHBYTES(''SHA2_256'', InvoiceDate)) AS Date_key,
   date_part as datetime,
-  EXTRACT(YEAR FROM date_part) AS year,
-  EXTRACT(MONTH FROM date_part) AS month,
-  EXTRACT(DAY FROM date_part) AS day,
-  EXTRACT(HOUR FROM date_part) AS hour,
-  EXTRACT(MINUTE FROM date_part) AS minute,
-  EXTRACT(DAYOFWEEK FROM date_part) AS weekday
-FROM datetime_cte;
+  YEAR(date_part) AS year,
+  MONTH(date_part) AS month,
+  DAY(date_part) AS day,
+  DATEPART(HOUR, date_part) AS hour,
+  DATEPART(MINUTE, date_part) AS minute,
+  DATEPART(WEEKDAY, date_part) AS weekday
+FROM datetime_cte;;
     ')
 
