@@ -7,7 +7,7 @@ docker exec -u root -t -i oneline-retail-project_5f80e5-scheduler-1 /bin/bash
 hdfs dfs -mkdir -p /Online_Retail_Analysis/datalake
 
 # Move file from local to container
-docker cp N:/BigData/Online_Retail_Analysis/include/dataset/Online_Retail.csv hadoop-datanode-1:/local_data/online_retail.csv
+docker cp N:/BigData/Online_Retail_Analysis/include/dataset/online_retail.csv hadoop-datanode-1:/local_data/online_retail.csv
 
 
 # Move file from local container to hdfs

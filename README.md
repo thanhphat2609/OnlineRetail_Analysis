@@ -101,7 +101,17 @@ docker network connect hadoop_default oneline-retail-project_5f80e5-postgres-1
 
 ## 4.2. Result of Pipeline
 
-Not Updated Yet
+- **Pipeline result**
+![image](https://github.com/user-attachments/assets/47071056-0101-4842-a7d9-17cc791df9f1)
+
+- **Data Quality check for Source**
+![image](https://github.com/user-attachments/assets/9cd81b62-aa6f-4886-8eb8-bfed05144ee5)
+
+- **Staging phase**
+
+- **Data Warehouse phase**
+
+- **Data Quality check for Data Model**
 
 # **5. Report**
 

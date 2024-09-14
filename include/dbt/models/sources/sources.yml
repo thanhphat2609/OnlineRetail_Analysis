@@ -12,3 +12,9 @@ sources:
     schema: STG
     tables:
       - name: retail_sales
+
+  - name: online_retail_test
+    database: online-retail-kaggle
+    schema: dbo
+    tables:
+      - name: online_retail

@@ -26,7 +26,7 @@ try:
     # To connect to WebHDFS by providing the IP of the HDFS host and the WebHDFS port.
     client_hdfs = InsecureClient('http://hdfs-namenode:9870', user='thanhphat')
 
-    with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding = 'ISO-8859-1') as reader:
+    with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding = 'utf-8') as reader:
         df = pd.read_csv(reader,index_col=0)
 
     # Handle some exception
@@ -50,14 +50,14 @@ try:
         # Create table in STG schema
         CREATE_TABLE_QUERY = f"""
                     CREATE TABLE STG.{table_name}(
-                        InvoiceNo VARCHAR(1000),
-                        StockCode VARCHAR(1000),
-                        Description VARCHAR(1000),
+                        InvoiceNo VARCHAR(100),
+                        StockCode VARCHAR(100),
+                        Description VARCHAR(500),
                         Quantity INT,
                         InvoiceDate VARCHAR(100),
-                        UnitPrice DECIMAL(10, 2), 
+                        UnitPrice FLOAT, 
                         CustomerID INT,
-                        Country VARCHAR(1000)
+                        Country VARCHAR(100)
                     )
                 """
         cursor.execute(CREATE_TABLE_QUERY)

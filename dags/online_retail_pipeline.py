@@ -54,25 +54,25 @@ def create_data_pipeline_dag(dagid):
         # Create dimCountry
         dim_country = BashOperator(
             task_id='Create_DWH_dimCountry',
-            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimCountry.sql',
+            bash_command='cd /usr/local/airflow && source dbt_venv/bin/activate && cd include/dbt && dbt run --models models/transform/dimCountry.sql',
             dag = dag
         )
 
         dim_customer = BashOperator(
             task_id='Create_DWH_dimCustomer',
-            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimCustomer.sql',
+            bash_command='cd /usr/local/airflow && source dbt_venv/bin/activate && cd include/dbt && dbt run --models models/transform/dimCustomer.sql',
             dag = dag
         )
 
         dim_datetime = BashOperator(
             task_id='Create_DWH_dimDateTime',
-            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimDateTime.sql',
+            bash_command='cd /usr/local/airflow && source dbt_venv/bin/activate && cd include/dbt && dbt run --models models/transform/dimDateTime.sql',
             dag = dag
         )
 
         dim_products = BashOperator(
             task_id='Create_DWH_dimProducts',
-            bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/dimProducts.sql',
+            bash_command='cd /usr/local/airflow && source dbt_venv/bin/activate && cd include/dbt && dbt run --models models/transform/dimProducts.sql',
             dag = dag
         )
 
@@ -80,7 +80,7 @@ def create_data_pipeline_dag(dagid):
 
     fact_invoice = BashOperator(
         task_id='Create_DWH_factInvoice',
-        bash_command='cd include/dbt && source dbt_venv/bin/activate && dbt run --models models/transform/factInvoice.sql',
+        bash_command='cd /usr/local/airflow && source dbt_venv/bin/activate && cd include/dbt && dbt run --models models/transform/factInvoice.sql',
         dag = dag
     )
 

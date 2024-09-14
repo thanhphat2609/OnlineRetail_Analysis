@@ -17,36 +17,30 @@ context = gx.get_context()
 
 import os
 
-def check_local_file(file_path):
-    """Check if a file exists in the local filesystem."""
-    return os.path.isfile(file_path)
-
-# Specify the file path
-    # file path for local check
-# file_path = "../dataset/Online_Retail.csv"
-    # file path for Docker
-file_path = '/usr/local/airflow/include/dataset/Online_Retail.csv'
-
-# Task 1: Check exits File
-if check_local_file(file_path):
-    message_task_1 = f"""Task 1: Check file exists -> Success. File: {file_path} exists"""
-    
-else:
-    message_task_1 = f"""Task 1: Check file exists -> Failed. File: {file_path} does not exists"""
-
 # To connect to WebHDFS by providing the IP of the HDFS host and the WebHDFS port.
 client_hdfs = InsecureClient('http://hdfs-namenode:9870', user='thanhphat')
 
-with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding = 'ISO-8859-1') as reader:
-    validator = context.sources.pandas_default.read_csv(reader)
+def file_exists(client_hdfs, path):
+    try:
+        client_hdfs.status(path)
+        return True
+    except Exception as e:
+        return False
 
-# # Prepare for great_expectations quality
-# data_source = context.data_sources.add_pandas("pandas")
-# data_asset = data_source.add_dataframe_asset(name="pd dataframe asset")
+file_path = '/Online_Retail_Analysis/datalake/online_retail.csv'
 
-# batch_definition = data_asset.add_batch_definition_whole_dataframe("batch definition")
-# batch = batch_definition.get_batch(batch_parameters={"dataframe": df})
+# Task 1: Check exits File
+if file_exists(client_hdfs, file_path):
+    message_task_1 = f"""Task 1: Check file exists. File: {file_path} exists => Success"""
+else:
+    message_task_1 = f"""Task 1: Check file exists. File: {file_path} does not exists => Failed"""
 
+with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding = 'utf-8') as reader:
+    df = pd.read_csv(reader)
+    df.to_csv("./online_retail.csv", index=False, header=True)
+
+
+validator = context.sources.pandas_default.read_csv("./online_retail.csv")
 
 # Task 2: Check schema of the data source
 col_check = ["InvoiceNo", "StockCode", "Description", "Quantity", 
@@ -67,25 +61,29 @@ validation_results = validator.validate()
 
 # print(validation_results)
 
-# Creating task messages
+# Task message
 task_messages = []
 
-for idx, result in enumerate(validation_results, start=2):
-    type_check = result["expectation_config"]["type"]
-    column = result["expectation_config"]["kwargs"].get("column", "N/A")
-    success = result["success"]
+for index, result in enumerate(validation_results['results']):
+    expectation_type = result['expectation_config']['expectation_type']
     
-    if success:
-        if type_check == "expect_table_columns_to_match_set":
-            message = f"Task {idx}: Check schema. All column match -> Success"
+    # Default value for column to avoid errors
+    column = result['expectation_config']['kwargs'].get('column', 'N/A')
+    
+    task_check = index + 2 
+
+    # Check for success or failure in the result
+    if result['success']:
+        if expectation_type == "expect_table_columns_to_match_set":
+            message = f"Task {task_check}: Check schema. All columns match => Success"
         else:
-            message = f"Task {idx}: Check null for column: {column} -> Success"
+            message = f"Task {task_check}: Check null value for column: {column} => Success"
     else:
-        if type_check == "expect_table_columns_to_match_set":
-            message = f"Task {idx}: Check schema. All column not match -> Failed"
+        if expectation_type == "expect_table_columns_to_match_set":
+            message = f"Task {task_check}: Check schema. Columns do not match => Failed"
         else:
-            message = f"Task {idx}: Check null for column for column: {column} -> Failed"
-    
+            message = f"Task {task_check}: Check null value for column: {column} => Failed"
+        
     task_messages.append(message)
 
 # Combine file check message with task messages
@@ -93,16 +91,18 @@ final_message = f"{message_task_1}\n" + "\n".join(task_messages)
 
 print(final_message)
 
-# subject = "Data Quality Check for Source"
+subject = "Data Quality Check for Source"
 
-# alert_quality.send_email(
-#     body= f"""Subject: {subject}
+alert_quality.send_email(
+    body= f"""Subject: {subject}
 
-# {final_message}. 
+{final_message}. 
 
-# Please review the attached report and fix the error.""",
+Please review the attached report and fix the error.""",
 
-#     to_email="20520270@gm.uit.edu.vn",
+    to_email="20520270@gm.uit.edu.vn",
 
-#     password=password
-# )
+    password=password
+)
+
+os.remove("./online_retail.csv")
