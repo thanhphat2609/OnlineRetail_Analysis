@@ -33,7 +33,7 @@ _Table of Contents_
 
 - **Hadoop (HDFS)**: Hadoop is an open-source framework designed for storing and processing large volumes of data across distributed clusters. The Hadoop Distributed File System (HDFS) is a key component of Hadoop, providing scalable and fault-tolerant storage by breaking data into blocks and distributing them across multiple nodes. This architecture ensures high availability and efficient data management, making it ideal for handling big data workloads.
 
-- **Power BI Desktop**: Power BI Desktop is a powerful business intelligence tool from Microsoft that enables users to create interactive reports and visualizations. It provides a user-friendly interface for connecting to various data sources, transforming data, and building insightful dashboards. With its robust data modeling and visualization capabilities, Power BI Desktop helps organizations turn raw data into actionable insights, facilitating better decision-making and data-driven strategies.
+- **Apache Superset**: Apache Superset is an open-source data exploration and visualization platform designed for creating interactive dashboards and visualizations. It offers a rich set of features for connecting to various data sources, performing data analysis, and generating insightful visualizations. With its user-friendly interface and extensive support for SQL queries, Superset enables users to explore data, build custom dashboards, and share insights across teams, making it a powerful tool for data-driven decision-making.
 
 - **Apache Airflow**: Apache Airflow is a workflow automation tool that allows you to define, schedule, and monitor complex data workflows. It acts like a task scheduler for your data engineering processes, ensuring that each step in your pipeline is executed in the correct order and dependencies are managed efficiently.
 
@@ -51,7 +51,7 @@ _Table of Contents_
 - **Analytics**: This last step we will use tools and techniques to analyze the data in the data warehouse, such as: Power BI, Tableau, Superset ..
 
 ## 2.2. Physical Architecture
-![dockerarchitecture](https://github.com/user-attachments/assets/46e6d41d-dd89-48b5-82a6-3decda246389)
+![dockerarchitecture](https://github.com/user-attachments/assets/ccfe5173-93e4-4049-9391-d2e6e1aa13f5)
 
 - **Source Data (CSV from Kaggle)**: The project sources data from a Kaggle Online Retail dataset in CSV format, representing the initial stage.
 
@@ -59,7 +59,7 @@ _Table of Contents_
 
 - **Orchestration Layer**: This layer manages workflow automation, data quality checks and data transformation using **Python, Great_Expectations, Data Build Tools (DBT)**.
 
-- **Reporting Layer**: The transformed data is pushed to an SQL database using SSMS (SQL Server Management Studio) for querying.Power BI then accesses this structured data for generating insights and reports, allowing stakeholders to visualize and make decisions based on the processed data.
+- **Reporting Layer**: The transformed data is pushed to an SQL database using SSMS (SQL Server Management Studio) for querying. Apache Superset then accesses this structured data for generating insights and reports, allowing stakeholders to visualize and make decisions based on the processed data.
 
 - **Containerization with Docker**: The entire setup is containerized using Docker, ensuring portability and consistency across different environments.
 
@@ -88,18 +88,15 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 - **Container**
 
 Container for project
-
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/f0628e01-2eaa-4272-a358-ca52ebb870f5)
 
 Container for Hadoop
-
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/e216fb04-0aa4-44a7-8dc2-ccf695b3b5e0)
 
 Container for Superset
+![image](https://github.com/user-attachments/assets/7c9c1338-3e68-4b08-bc0d-8ed1adaf5141)
 
-![alt text](image-2.png)
-
-- **Connect two container for Docker network (Hadoop, Astro CLI Project)**:
+- **Connect two container with Docker network (Hadoop, Astro CLI Project) for accessing Hadoop Storage**:
 
 docker network connect hadoop_default oneline-retail-project_5f80e5-webserver-1
 
@@ -139,7 +136,8 @@ Not Updated Yet. (Dont know what to check for Data Modelling)
 
 ## 5.1. Data Modelling
 
-Not Updated Yet
+- **Dataset on Superset**:
+![image](https://github.com/user-attachments/assets/04036de9-693b-4503-89df-e74cef787b09)
 
 ## 5.2. Report
 
