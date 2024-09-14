@@ -42,7 +42,7 @@ try:
         # executionDate = "2024_09_05"
         table_name = f"retail_sales"
 
-        DROP_TABLE_QUERY = "DROP TABLE IF EXISTS STG.{table_name}"
+        DROP_TABLE_QUERY = f"DROP TABLE IF EXISTS STG.{table_name};"
         cursor.execute(DROP_TABLE_QUERY)
         connection.commit()
 
@@ -58,7 +58,7 @@ try:
                         UnitPrice FLOAT, 
                         CustomerID INT,
                         Country VARCHAR(100)
-                    )
+                    );
                 """
         cursor.execute(CREATE_TABLE_QUERY)
         connection.commit()

@@ -3810,3 +3810,1719 @@ USE [online-retail-kaggle];
 [0m16:22:01.323206 [debug] [MainThread]: Command `dbt run` succeeded at 16:22:01.323047 after 9.03 seconds
 [0m16:22:01.324034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8e9659c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8e8f49ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8e75dc260>]}
 [0m16:22:01.324922 [debug] [MainThread]: Flushing usage events
+[0m16:37:33.827323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d7b6be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d8188cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d7b69bb0>]}
+
+
+============================== 16:37:33.834631 | 5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9 ==============================
+[0m16:37:33.834631 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:37:33.836387 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --models models/transform/dimCountry.sql', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:33.830799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95325f7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95325e9f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95325c9e0>]}
+
+
+============================== 16:37:33.838209 | 67469d44-9f98-42d4-82ac-f2e87c6b79c0 ==============================
+[0m16:37:33.838209 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:37:33.839919 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models models/transform/dimProducts.sql', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:33.840726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8577cf950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb85629bc80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb857f78cb0>]}
+
+
+============================== 16:37:33.853051 | ef501d4e-d268-4118-98f0-870071e73040 ==============================
+[0m16:37:33.853051 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:37:33.854960 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --models models/transform/dimDateTime.sql', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:33.901740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbe3495e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbd858170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbe34b020>]}
+
+
+============================== 16:37:33.908589 | c1f4e5b7-fa10-4155-9021-229858ff93fb ==============================
+[0m16:37:33.908589 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:37:33.910578 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --models models/transform/dimCustomer.sql', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:34.847289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d71d49e0>]}
+[0m16:37:34.849032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd953d45730>]}
+[0m16:37:34.850288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb855cd4ce0>]}
+[0m16:37:34.921125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbc21c8c0>]}
+[0m16:37:35.023339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9537cc890>]}
+[0m16:37:35.025034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d96daba0>]}
+[0m16:37:35.025126 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:37:35.025828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb857256ed0>]}
+[0m16:37:35.026766 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:37:35.027449 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:37:35.086178 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:37:35.088470 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:37:35.091710 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:37:35.110710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbbed5160>]}
+[0m16:37:35.116017 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:37:35.169051 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:37:35.502182 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:37:35.507786 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:37:35.509012 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:37:35.509183 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:37:35.526427 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:37:35.528531 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:37:35.529958 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:37:35.530309 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:37:35.544702 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:37:35.619459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95286a7b0>]}
+[0m16:37:35.619858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d5dbcd70>]}
+[0m16:37:35.629630 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:37:35.631682 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:37:35.633958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb855b348c0>]}
+[0m16:37:35.647515 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:37:35.751251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbd0d01d0>]}
+[0m16:37:35.981438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9517c6330>]}
+[0m16:37:35.982351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d5be7a10>]}
+[0m16:37:35.983519 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:37:35.984375 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:37:35.986661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d7812c30>]}
+[0m16:37:35.986661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9518310d0>]}
+[0m16:37:36.007234 [info ] [MainThread]: 
+[0m16:37:36.009296 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:37:36.009139 [info ] [MainThread]: 
+[0m16:37:36.014584 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:37:36.017824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8545269c0>]}
+[0m16:37:36.018074 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:37:36.019685 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:37:36.018552 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:37:36.022479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb854842120>]}
+[0m16:37:36.040882 [info ] [MainThread]: 
+[0m16:37:36.042834 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:37:36.046567 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:37:36.067855 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:36.069253 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:37:36.070382 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:36.071762 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:36.072235 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:36.073104 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:36.073585 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:37:36.074904 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:36.076291 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:36.078314 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:36.103229 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:36.106633 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:37:36.107956 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:36.109101 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:36.110411 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:36.146074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbbae35f0>]}
+[0m16:37:36.147865 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:37:36.149467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbbaa2a80>]}
+[0m16:37:36.168621 [info ] [MainThread]: 
+[0m16:37:36.170314 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:37:36.172322 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:37:36.259099 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:36.270285 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:37:36.283252 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:36.293087 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:36.294606 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:39.003653 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:39.007627 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:39.040884 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:39.090382 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:39.232087 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:37:39.234703 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:37:39.244207 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:37:39.244834 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:37:39.246954 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:37:39.255657 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:37:39.256809 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:39.257661 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:37:39.258466 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:39.259332 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:37:39.260168 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:39.268355 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:39.269399 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:37:39.270205 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:39.270824 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:37:39.271630 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:39.282404 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:37:39.286018 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:37:39.295091 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:37:39.307432 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:39.308795 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:37:39.309704 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:39.310459 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:37:39.311244 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:39.320450 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:37:39.322751 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:37:39.331426 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:37:39.343386 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:39.344439 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:37:39.345445 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:39.346181 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:37:39.347121 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:40.465649 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:40.476024 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:40.519197 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:40.555121 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:40.699997 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:37:40.702264 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:37:40.703171 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:37:40.706071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbe1dc770>]}
+[0m16:37:40.706958 [debug] [MainThread]: On master: COMMIT
+[0m16:37:40.708417 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:37:40.709329 [info ] [MainThread]: 
+[0m16:37:40.710654 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:37:40.712815 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:37:40.712992 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimCustomer
+[0m16:37:40.713775 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:37:40.713992 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimCustomer .................................... [RUN]
+[0m16:37:40.715021 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimCustomer)
+[0m16:37:40.715918 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimCustomer
+[0m16:37:40.716968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb854bb1af0>]}
+[0m16:37:40.717983 [debug] [MainThread]: On master: COMMIT
+[0m16:37:40.718975 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:37:40.719756 [info ] [MainThread]: 
+[0m16:37:40.723707 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimDateTime
+[0m16:37:40.724872 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimDateTime .................................... [RUN]
+[0m16:37:40.725723 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimDateTime)
+[0m16:37:40.726539 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimDateTime
+[0m16:37:40.726697 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimCustomer"
+[0m16:37:40.737006 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimCustomer
+[0m16:37:40.737540 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimDateTime"
+[0m16:37:40.749450 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimDateTime
+[0m16:37:40.759143 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:37:40.761293 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:37:40.762045 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:37:40.765489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9518d2630>]}
+[0m16:37:40.766626 [debug] [MainThread]: On master: COMMIT
+[0m16:37:40.767432 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:37:40.768121 [info ] [MainThread]: 
+[0m16:37:40.771777 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimProducts
+[0m16:37:40.773011 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimProducts .................................... [RUN]
+[0m16:37:40.774099 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimProducts)
+[0m16:37:40.774927 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimProducts
+[0m16:37:40.785183 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimProducts"
+[0m16:37:40.787047 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimCustomer"
+[0m16:37:40.789276 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:37:40.792577 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:37:40.793899 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:37:40.795868 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimProducts
+[0m16:37:40.797982 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:37:40.798985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d5d08ec0>]}
+[0m16:37:40.799074 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimCustomer__dbt_tmp" as 
+
+SELECT DISTINCT CustomerID, Country
+-- FROM "online-retail-kaggle"."STG"."retail_sales"
+FROM "online-retail-kaggle"."dbo"."online_retail"
+WHERE CustomerID IS NOT NULL;
+    ')
+
+
+[0m16:37:40.800147 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:40.800190 [debug] [MainThread]: On master: COMMIT
+[0m16:37:40.801086 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:40.801178 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:37:40.802037 [info ] [MainThread]: 
+[0m16:37:40.802475 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimDateTime"
+[0m16:37:40.805956 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimCountry
+[0m16:37:40.807307 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimCountry ..................................... [RUN]
+[0m16:37:40.808384 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimCountry)
+[0m16:37:40.809330 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimCountry
+[0m16:37:40.814414 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:37:40.815696 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimDateTime__dbt_tmp" as 
+
+-- Create a CTE to extract date and time components
+WITH datetime_cte AS (
+  SELECT DISTINCT
+    InvoiceDate,
+    CASE
+      WHEN LEN(InvoiceDate) = 16 THEN
+        -- Date format: "DD/MM/YYYY HH:MM"
+        TRY_CAST(InvoiceDate AS DATETIME)
+      WHEN LEN(InvoiceDate) <= 14 THEN
+        -- Date format: "MM/DD/YY HH:MM"
+        TRY_CAST(InvoiceDate AS DATETIME)
+      ELSE
+        NULL
+    END AS date_part
+  -- Replace the table name accordingly
+  -- FROM "online-retail-kaggle"."STG"."retail_sales"
+  FROM "online-retail-kaggle"."dbo"."online_retail"
+  WHERE InvoiceDate IS NOT NULL
+)
+SELECT
+  InvoiceDate,
+  CONVERT(BIGINT, HASHBYTES(''SHA2_256'', InvoiceDate)) AS Date_key,
+  date_part as datetime,
+  YEAR(date_part) AS year,
+  MONTH(date_part) AS month,
+  DAY(date_part) AS day,
+  DATEPART(HOUR, date_part) AS hour,
+  DATEPART(MINUTE, date_part) AS minute,
+  DATEPART(WEEKDAY, date_part) AS weekday
+FROM datetime_cte;;
+    ')
+
+
+[0m16:37:40.816780 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:40.817734 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:40.824522 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimCountry"
+[0m16:37:40.836303 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimCountry
+[0m16:37:40.855978 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimProducts"
+[0m16:37:40.863891 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:37:40.864748 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimProducts__dbt_tmp" as 
+
+SELECT DISTINCT StockCode, Description, UnitPrice, 
+       CONVERT(BIGINT, HASHBYTES(''SHA2_256'', StockCode)) AS Product_key
+-- FROM "online-retail-kaggle"."STG"."retail_sales"
+FROM "online-retail-kaggle"."dbo"."online_retail"
+WHERE StockCode IS NOT NULL;
+    ')
+
+
+[0m16:37:40.865854 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:40.866806 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:40.895362 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimCountry"
+[0m16:37:40.904448 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:37:40.905292 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimCountry__dbt_tmp" as 
+
+SELECT
+    *
+FROM
+    "online-retail-kaggle"."dbo"."country";
+    ')
+
+
+[0m16:37:40.905922 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:40.906662 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:42.035452 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:42.061351 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:42.070875 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:42.136130 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:42.271156 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:37:42.286331 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:37:42.287592 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCustomer', 'dimCustomer__dbt_backup'
+[0m16:37:42.297914 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:37:42.307856 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:37:42.309132 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimDateTime', 'dimDateTime__dbt_backup'
+[0m16:37:42.320054 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:37:42.329874 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:37:42.330872 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimProducts', 'dimProducts__dbt_backup'
+[0m16:37:42.370852 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:37:42.382210 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:37:42.383396 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCountry', 'dimCountry__dbt_backup'
+[0m16:37:42.523981 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.529760 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:37:42.530664 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCustomer__dbt_tmp', 'dimCustomer'
+[0m16:37:42.539863 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.544862 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:37:42.545823 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimDateTime__dbt_tmp', 'dimDateTime'
+[0m16:37:42.568880 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.574211 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:37:42.575169 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimProducts__dbt_tmp', 'dimProducts'
+[0m16:37:42.624179 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.631892 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:37:42.632983 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCountry__dbt_tmp', 'dimCountry'
+[0m16:37:42.768849 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.783979 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.795495 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: COMMIT
+[0m16:37:42.804325 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimCustomer__dbt_backup"
+[0m16:37:42.815071 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: COMMIT
+[0m16:37:42.820179 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.820067 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:37:42.823058 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:37:42.824520 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimCustomer__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:37:42.829956 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimDateTime__dbt_backup"
+[0m16:37:42.842790 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:37:42.844069 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:37:42.845288 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimDateTime__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:37:42.852330 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: COMMIT
+[0m16:37:42.862878 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimProducts__dbt_backup"
+[0m16:37:42.866992 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:42.874432 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:37:42.875459 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:37:42.876518 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimProducts__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:37:42.897726 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: COMMIT
+[0m16:37:42.908155 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimCountry__dbt_backup"
+[0m16:37:42.923779 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:37:42.925236 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:37:42.926378 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimCountry__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:37:43.055523 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.058702 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:37:43.059728 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimCustomer__dbt_backup";');
+
+[0m16:37:43.072062 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.075006 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:37:43.075970 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimDateTime__dbt_backup";');
+
+[0m16:37:43.111529 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.114755 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:37:43.115775 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimProducts__dbt_backup";');
+
+[0m16:37:43.161275 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.165104 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:37:43.166212 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimCountry__dbt_backup";');
+
+[0m16:37:43.296987 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.300386 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: ROLLBACK
+[0m16:37:43.301374 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: Close
+[0m16:37:43.304668 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1f4e5b7-fa10-4155-9021-229858ff93fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbbabb890>]}
+[0m16:37:43.306031 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimCustomer ............................... [[32mOK[0m in 2.59s]
+[0m16:37:43.306559 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.307292 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimCustomer
+[0m16:37:43.309592 [debug] [MainThread]: On master: COMMIT
+[0m16:37:43.310087 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: ROLLBACK
+[0m16:37:43.310506 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:43.310968 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: Close
+[0m16:37:43.311288 [debug] [MainThread]: Connection 'model.online_retail_project.dimCustomer' was properly closed.
+[0m16:37:43.312182 [info ] [MainThread]: 
+[0m16:37:43.313122 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.14 seconds (7.14s).
+[0m16:37:43.314258 [debug] [MainThread]: Command end result
+[0m16:37:43.314623 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ef501d4e-d268-4118-98f0-870071e73040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb857255eb0>]}
+[0m16:37:43.315869 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimDateTime ............................... [[32mOK[0m in 2.59s]
+[0m16:37:43.317169 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimDateTime
+[0m16:37:43.321969 [debug] [MainThread]: On master: COMMIT
+[0m16:37:43.323406 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:43.324725 [debug] [MainThread]: Connection 'model.online_retail_project.dimDateTime' was properly closed.
+[0m16:37:43.326221 [info ] [MainThread]: 
+[0m16:37:43.327170 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.28 seconds (7.28s).
+[0m16:37:43.328878 [debug] [MainThread]: Command end result
+[0m16:37:43.351788 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.355907 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: ROLLBACK
+[0m16:37:43.356909 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: Close
+[0m16:37:43.360953 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67469d44-9f98-42d4-82ac-f2e87c6b79c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95433e000>]}
+[0m16:37:43.362400 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimProducts ............................... [[32mOK[0m in 2.59s]
+[0m16:37:43.363539 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimProducts
+[0m16:37:43.366147 [debug] [MainThread]: On master: COMMIT
+[0m16:37:43.367015 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:43.367651 [debug] [MainThread]: Connection 'model.online_retail_project.dimProducts' was properly closed.
+[0m16:37:43.368360 [info ] [MainThread]: 
+[0m16:37:43.369068 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.36 seconds (7.36s).
+[0m16:37:43.370381 [debug] [MainThread]: Command end result
+[0m16:37:43.401108 [info ] [MainThread]: 
+[0m16:37:43.402240 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:37:43.403421 [info ] [MainThread]: 
+[0m16:37:43.404410 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:37:43.406169 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.658357, "process_user_time": 5.492441, "process_kernel_time": 0.378102, "process_mem_max_rss": "171396", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:37:43.408010 [debug] [MainThread]: Command `dbt run` succeeded at 16:37:43.407538 after 9.66 seconds
+[0m16:37:43.408292 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:43.409111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbd405340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbda9b560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cbce5fef0>]}
+[0m16:37:43.409986 [debug] [MainThread]: Flushing usage events
+[0m16:37:43.412780 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: ROLLBACK
+[0m16:37:43.413890 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: Close
+[0m16:37:43.418932 [info ] [MainThread]: 
+[0m16:37:43.419808 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5e1e32ae-a0e1-465b-a4a6-92bd30d84fc9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d88f5e20>]}
+[0m16:37:43.420020 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:37:43.420856 [info ] [MainThread]: 
+[0m16:37:43.421987 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:37:43.422074 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimCountry ................................ [[32mOK[0m in 2.61s]
+[0m16:37:43.423740 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.723395, "process_user_time": 5.359915, "process_kernel_time": 0.347401, "process_mem_max_rss": "171392", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:37:43.423794 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimCountry
+[0m16:37:43.424866 [debug] [MainThread]: Command `dbt run` succeeded at 16:37:43.424709 after 9.72 seconds
+[0m16:37:43.425790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8564fc950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb856152540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8561727b0>]}
+[0m16:37:43.426530 [debug] [MainThread]: On master: COMMIT
+[0m16:37:43.426787 [debug] [MainThread]: Flushing usage events
+[0m16:37:43.427804 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:43.428597 [debug] [MainThread]: Connection 'model.online_retail_project.dimCountry' was properly closed.
+[0m16:37:43.429450 [info ] [MainThread]: 
+[0m16:37:43.430239 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.42 seconds (7.42s).
+[0m16:37:43.431656 [debug] [MainThread]: Command end result
+[0m16:37:43.465129 [info ] [MainThread]: 
+[0m16:37:43.466509 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:37:43.467492 [info ] [MainThread]: 
+[0m16:37:43.468279 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:37:43.469873 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.786566, "process_user_time": 5.412711, "process_kernel_time": 0.270635, "process_mem_max_rss": "171396", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:37:43.470992 [debug] [MainThread]: Command `dbt run` succeeded at 16:37:43.470838 after 9.79 seconds
+[0m16:37:43.472809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95315e6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95327dd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd95327e6c0>]}
+[0m16:37:43.473741 [debug] [MainThread]: Flushing usage events
+[0m16:37:43.526682 [info ] [MainThread]: 
+[0m16:37:43.527658 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:37:43.528386 [info ] [MainThread]: 
+[0m16:37:43.529173 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:37:43.530705 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.847313, "process_user_time": 5.344204, "process_kernel_time": 0.390307, "process_mem_max_rss": "171400", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:37:43.531702 [debug] [MainThread]: Command `dbt run` succeeded at 16:37:43.531533 after 9.85 seconds
+[0m16:37:43.532509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d832ddc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d7f8a540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d5ee3350>]}
+[0m16:37:43.533529 [debug] [MainThread]: Flushing usage events
+[0m16:37:48.179374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70da790da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70db2a6db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70daaca5a0>]}
+
+
+============================== 16:37:48.183829 | 1e7d4308-e9bc-4e72-bbba-8290c9afd5c8 ==============================
+[0m16:37:48.183829 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:37:48.185228 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'log_path': '/usr/local/airflow/include/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --models models/transform/factInvoice.sql', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:37:48.625638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70da57b170>]}
+[0m16:37:48.755692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70d95e18e0>]}
+[0m16:37:48.758347 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:37:48.798399 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:37:49.149601 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:37:49.151373 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:37:49.164806 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:37:49.231207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70daa277d0>]}
+[0m16:37:49.415750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70d921f6b0>]}
+[0m16:37:49.417597 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:37:49.418979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70d983d730>]}
+[0m16:37:49.435046 [info ] [MainThread]: 
+[0m16:37:49.436701 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:37:49.438476 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:37:49.462479 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:49.463833 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:37:49.464819 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:49.465962 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:37:49.467014 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:52.556317 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:52.788050 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:37:52.791639 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:37:52.801365 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:37:52.811616 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:37:52.812733 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:37:52.813706 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:37:52.814408 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:37:52.815132 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:54.069143 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:54.304082 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:37:54.306242 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:37:54.306973 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:37:54.310782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70da8a7cb0>]}
+[0m16:37:54.311887 [debug] [MainThread]: On master: COMMIT
+[0m16:37:54.312752 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:37:54.313577 [info ] [MainThread]: 
+[0m16:37:54.316653 [debug] [Thread-1 (]: Began running node model.online_retail_project.factInvoice
+[0m16:37:54.317614 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.factInvoice .................................... [RUN]
+[0m16:37:54.318403 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.factInvoice)
+[0m16:37:54.319166 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.factInvoice
+[0m16:37:54.328119 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.factInvoice"
+[0m16:37:54.338446 [debug] [Thread-1 (]: Began executing node model.online_retail_project.factInvoice
+[0m16:37:54.381110 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.factInvoice"
+[0m16:37:54.393821 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:37:54.394671 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."factInvoice__dbt_tmp" as 
+
+SELECT 
+    InvoiceNo, Quantity, CONVERT(BIGINT, HASHBYTES(''SHA2_256'', StockCode)) AS Product_key, 
+    CONVERT(BIGINT, HASHBYTES(''SHA2_256'', InvoiceDate)) AS Date_key, CustomerID
+-- FROM "online-retail-kaggle"."STG"."retail_sales"
+FROM "online-retail-kaggle"."dbo"."online_retail";
+    ')
+
+
+[0m16:37:54.395601 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:37:54.396458 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:37:56.274177 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:37:56.519415 [debug] [Thread-1 (]: SQL status: OK in 2.000 seconds
+[0m16:37:56.528256 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:37:56.529128 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.factInvoice', 'factInvoice__dbt_backup'
+[0m16:37:56.764287 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:56.768654 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:37:56.769391 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.factInvoice__dbt_tmp', 'factInvoice'
+[0m16:37:57.003292 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:57.029941 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: COMMIT
+[0m16:37:57.038235 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."factInvoice__dbt_backup"
+[0m16:37:57.048667 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:37:57.049838 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:37:57.050750 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'factInvoice__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:37:57.286097 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:57.289319 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:37:57.290304 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."factInvoice__dbt_backup";');
+
+[0m16:37:57.527372 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:37:57.530525 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: ROLLBACK
+[0m16:37:57.531476 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: Close
+[0m16:37:57.534483 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e7d4308-e9bc-4e72-bbba-8290c9afd5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70dbefa030>]}
+[0m16:37:57.535753 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.factInvoice ............................... [[32mOK[0m in 3.22s]
+[0m16:37:57.536860 [debug] [Thread-1 (]: Finished running node model.online_retail_project.factInvoice
+[0m16:37:57.539611 [debug] [MainThread]: On master: COMMIT
+[0m16:37:57.540694 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:37:57.541624 [debug] [MainThread]: Connection 'model.online_retail_project.factInvoice' was properly closed.
+[0m16:37:57.542372 [info ] [MainThread]: 
+[0m16:37:57.543247 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 8.11 seconds (8.11s).
+[0m16:37:57.544671 [debug] [MainThread]: Command end result
+[0m16:37:57.624009 [info ] [MainThread]: 
+[0m16:37:57.625095 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:37:57.625841 [info ] [MainThread]: 
+[0m16:37:57.626691 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:37:57.628074 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.551586, "process_user_time": 3.158613, "process_kernel_time": 0.151371, "process_mem_max_rss": "171388", "process_in_blocks": "16", "process_out_blocks": "0"}
+[0m16:37:57.629174 [debug] [MainThread]: Command `dbt run` succeeded at 16:37:57.629020 after 9.55 seconds
+[0m16:37:57.630040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70da977a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70db9dd700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70daa52b70>]}
+[0m16:37:57.630864 [debug] [MainThread]: Flushing usage events
+[0m16:44:07.891486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a194bd040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a194be300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a194bcd70>]}
+
+
+============================== 16:44:07.902287 | 64e53043-bcfc-4332-87f8-5d8af59efd78 ==============================
+[0m16:44:07.902287 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:44:07.904179 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --models models/transform/dimCountry.sql', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:07.901760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3327aeb530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3327aebf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33279b76e0>]}
+
+
+============================== 16:44:07.915443 | c9c39d16-25c6-4811-a8bf-f1401780fc09 ==============================
+[0m16:44:07.915443 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:44:07.918455 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --models models/transform/dimDateTime.sql', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:07.999258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcb51aa80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcb489cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcb34f740>]}
+
+
+============================== 16:44:08.011472 | e7c110d7-c174-435c-b3db-e4a076f6395a ==============================
+[0m16:44:08.011472 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:44:08.013698 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --models models/transform/dimProducts.sql', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:08.079963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d0037500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d01a3530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3cfd41670>]}
+
+
+============================== 16:44:08.098104 | 3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5 ==============================
+[0m16:44:08.098104 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:44:08.100428 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --models models/transform/dimCustomer.sql', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:08.934326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f332870ea50>]}
+[0m16:44:08.959812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a19fa18b0>]}
+[0m16:44:09.017688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcbac1820>]}
+[0m16:44:09.059735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3ce76f3e0>]}
+[0m16:44:09.096984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3326af6cc0>]}
+[0m16:44:09.098751 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:44:09.110643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a17ef5820>]}
+[0m16:44:09.112054 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:44:09.161643 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:44:09.176469 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:44:09.190536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcc0bed80>]}
+[0m16:44:09.198311 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:44:09.277412 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:44:09.277659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3ceb3e870>]}
+[0m16:44:09.279482 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:44:09.398734 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:44:09.830021 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:09.831377 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:09.855819 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:09.857815 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:09.863338 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:44:09.891709 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:44:09.914942 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:09.918363 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:09.940033 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:44:09.964569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3326d78bc0>]}
+[0m16:44:09.984858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a17a74c20>]}
+[0m16:44:10.032565 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:10.033803 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:10.049385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc94347d0>]}
+[0m16:44:10.051639 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:44:10.131760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3ce5f4d40>]}
+[0m16:44:10.309000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33259dc980>]}
+[0m16:44:10.311662 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:44:10.313793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3325cfa120>]}
+[0m16:44:10.334733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a178a7c20>]}
+[0m16:44:10.336011 [info ] [MainThread]: 
+[0m16:44:10.336903 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:44:10.338389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a1786a810>]}
+[0m16:44:10.338463 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:44:10.341082 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:44:10.354570 [info ] [MainThread]: 
+[0m16:44:10.356708 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:44:10.364882 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:44:10.399071 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:10.400453 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:44:10.401415 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:10.402353 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:10.403643 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:10.412689 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:10.417385 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:44:10.419877 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:10.421607 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:10.423087 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:10.425799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc93eb950>]}
+[0m16:44:10.430611 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:44:10.434085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbc954e180>]}
+[0m16:44:10.450501 [info ] [MainThread]: 
+[0m16:44:10.452375 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:44:10.455584 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:44:10.491550 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:10.492641 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:44:10.493414 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:10.494099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:10.494896 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:10.513098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3ce40b680>]}
+[0m16:44:10.514727 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:44:10.515968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3cea9ae10>]}
+[0m16:44:10.528450 [info ] [MainThread]: 
+[0m16:44:10.530053 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:44:10.532068 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:44:10.561735 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:10.562972 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:44:10.563916 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:10.564717 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:10.565700 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:13.502109 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:13.502465 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:13.509104 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:13.509466 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:13.730180 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:44:13.731301 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:44:13.732376 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:44:13.733337 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:44:13.736617 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:44:13.738150 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:44:13.739492 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:44:13.740155 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:44:13.741166 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:44:13.741193 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:44:13.750071 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:44:13.752382 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:13.752455 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:44:13.753296 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:44:13.754209 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:13.754398 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:13.754893 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:44:13.755093 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:44:13.755587 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:13.755905 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:13.756721 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:44:13.757589 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:13.762451 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:13.763398 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:44:13.764256 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:13.764471 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:13.764988 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:44:13.765264 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:44:13.765653 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:13.766053 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:13.766713 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:44:13.767371 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:14.951567 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:14.960126 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:14.977430 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:14.978722 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:15.179501 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:44:15.181562 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:44:15.182123 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:44:15.185161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbca8654c0>]}
+[0m16:44:15.186139 [debug] [MainThread]: On master: COMMIT
+[0m16:44:15.186892 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:44:15.187490 [info ] [MainThread]: 
+[0m16:44:15.190988 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimProducts
+[0m16:44:15.191894 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimProducts .................................... [RUN]
+[0m16:44:15.192603 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimProducts)
+[0m16:44:15.193190 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimProducts
+[0m16:44:15.194970 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:44:15.197014 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:44:15.197643 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:44:15.200506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a17dddbe0>]}
+[0m16:44:15.201376 [debug] [MainThread]: On master: COMMIT
+[0m16:44:15.202375 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:44:15.203099 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimProducts"
+[0m16:44:15.203127 [info ] [MainThread]: 
+[0m16:44:15.206145 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimCountry
+[0m16:44:15.207058 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimCountry ..................................... [RUN]
+[0m16:44:15.207842 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimCountry)
+[0m16:44:15.208381 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimCountry
+[0m16:44:15.211955 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimProducts
+[0m16:44:15.212223 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:44:15.214127 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:44:15.214886 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:44:15.215391 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:44:15.217796 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:44:15.218621 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:44:15.218846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3325b62a50>]}
+[0m16:44:15.219676 [debug] [MainThread]: On master: COMMIT
+[0m16:44:15.220481 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:44:15.222309 [info ] [MainThread]: 
+[0m16:44:15.222657 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimCountry"
+[0m16:44:15.223211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3ce3e6ed0>]}
+[0m16:44:15.224315 [debug] [MainThread]: On master: COMMIT
+[0m16:44:15.225533 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:44:15.226478 [info ] [MainThread]: 
+[0m16:44:15.226870 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimDateTime
+[0m16:44:15.228043 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimDateTime .................................... [RUN]
+[0m16:44:15.229149 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimDateTime)
+[0m16:44:15.229534 [debug] [Thread-1 (]: Began running node model.online_retail_project.dimCustomer
+[0m16:44:15.229890 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimDateTime
+[0m16:44:15.230989 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.dimCustomer .................................... [RUN]
+[0m16:44:15.232033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.dimCustomer)
+[0m16:44:15.232283 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimCountry
+[0m16:44:15.232737 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.dimCustomer
+[0m16:44:15.244370 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimDateTime"
+[0m16:44:15.246392 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.dimCustomer"
+[0m16:44:15.253033 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimDateTime
+[0m16:44:15.256772 [debug] [Thread-1 (]: Began executing node model.online_retail_project.dimCustomer
+[0m16:44:15.270371 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimProducts"
+[0m16:44:15.281646 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:44:15.282677 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimProducts__dbt_tmp" as 
+
+SELECT DISTINCT StockCode, Description, UnitPrice, 
+       CONVERT(BIGINT, HASHBYTES(''SHA2_256'', StockCode)) AS Product_key
+-- FROM "online-retail-kaggle"."STG"."retail_sales"
+FROM "online-retail-kaggle"."dbo"."online_retail"
+WHERE StockCode IS NOT NULL;
+    ')
+
+
+[0m16:44:15.283610 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:44:15.284432 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:15.291597 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimCountry"
+[0m16:44:15.300411 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:44:15.301207 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimCountry__dbt_tmp" as 
+
+SELECT
+    *
+FROM
+    "online-retail-kaggle"."dbo"."country";
+    ')
+
+
+[0m16:44:15.301909 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:44:15.302684 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:15.311863 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimDateTime"
+[0m16:44:15.314894 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.dimCustomer"
+[0m16:44:15.320153 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:44:15.321393 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:44:15.321777 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimDateTime__dbt_tmp" as 
+
+-- Create a CTE to extract date and time components
+WITH datetime_cte AS (
+  SELECT DISTINCT
+    InvoiceDate,
+    CASE
+      WHEN LEN(InvoiceDate) = 16 THEN
+        -- Date format: "DD/MM/YYYY HH:MM"
+        TRY_CAST(InvoiceDate AS DATETIME)
+      WHEN LEN(InvoiceDate) <= 14 THEN
+        -- Date format: "MM/DD/YY HH:MM"
+        TRY_CAST(InvoiceDate AS DATETIME)
+      ELSE
+        NULL
+    END AS date_part
+  -- Replace the table name accordingly
+  -- FROM "online-retail-kaggle"."STG"."retail_sales"
+  FROM "online-retail-kaggle"."dbo"."online_retail"
+  WHERE InvoiceDate IS NOT NULL
+)
+SELECT
+  InvoiceDate,
+  CONVERT(BIGINT, HASHBYTES(''SHA2_256'', InvoiceDate)) AS Date_key,
+  date_part as datetime,
+  YEAR(date_part) AS year,
+  MONTH(date_part) AS month,
+  DAY(date_part) AS day,
+  DATEPART(HOUR, date_part) AS hour,
+  DATEPART(MINUTE, date_part) AS minute,
+  DATEPART(WEEKDAY, date_part) AS weekday
+FROM datetime_cte;;
+    ')
+
+
+[0m16:44:15.322328 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."dimCustomer__dbt_tmp" as 
+
+SELECT DISTINCT CustomerID, Country
+-- FROM "online-retail-kaggle"."STG"."retail_sales"
+FROM "online-retail-kaggle"."dbo"."online_retail"
+WHERE CustomerID IS NOT NULL;
+    ')
+
+
+[0m16:44:15.323103 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:44:15.323093 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:44:15.323745 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:15.323812 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:16.517760 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:16.517811 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:16.530187 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:16.555831 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:16.753503 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:44:16.753726 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:44:16.762645 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:44:16.762783 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:44:16.763557 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimProducts', 'dimProducts__dbt_backup'
+[0m16:44:16.763598 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCountry', 'dimCountry__dbt_backup'
+[0m16:44:16.765622 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:44:16.773092 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:44:16.774160 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimDateTime', 'dimDateTime__dbt_backup'
+[0m16:44:16.790091 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m16:44:16.797416 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:44:16.798293 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCustomer', 'dimCustomer__dbt_backup'
+[0m16:44:16.999826 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.000577 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.003976 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:44:17.004670 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:44:17.004682 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimProducts__dbt_tmp', 'dimProducts'
+[0m16:44:17.005281 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCountry__dbt_tmp', 'dimCountry'
+[0m16:44:17.005349 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.010264 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:44:17.011130 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimDateTime__dbt_tmp', 'dimDateTime'
+[0m16:44:17.033691 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.037644 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:44:17.038287 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.dimCustomer__dbt_tmp', 'dimCustomer'
+[0m16:44:17.298950 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.302533 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.302615 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.302614 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.325806 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: COMMIT
+[0m16:44:17.326275 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: COMMIT
+[0m16:44:17.329859 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: COMMIT
+[0m16:44:17.331103 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: COMMIT
+[0m16:44:17.332950 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimCustomer__dbt_backup"
+[0m16:44:17.333572 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimDateTime__dbt_backup"
+[0m16:44:17.338944 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimCountry__dbt_backup"
+[0m16:44:17.339135 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."dimProducts__dbt_backup"
+[0m16:44:17.342612 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:44:17.343548 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:44:17.344423 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimCustomer__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:44:17.345784 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:44:17.346587 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:44:17.347361 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimDateTime__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:44:17.348165 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:44:17.349421 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:44:17.350486 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimProducts__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:44:17.352609 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:44:17.353714 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:44:17.354616 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'dimCountry__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:44:17.574376 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.575430 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.577147 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimDateTime"
+[0m16:44:17.577813 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimDateTime"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimDateTime__dbt_backup";');
+
+[0m16:44:17.578068 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCustomer"
+[0m16:44:17.578786 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCustomer"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimCustomer__dbt_backup";');
+
+[0m16:44:17.580835 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.582832 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimProducts"
+[0m16:44:17.583402 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimProducts"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimProducts__dbt_backup";');
+
+[0m16:44:17.584084 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.586075 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.dimCountry"
+[0m16:44:17.586761 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.dimCountry"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."dimCountry__dbt_backup";');
+
+[0m16:44:17.808049 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.811191 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: ROLLBACK
+[0m16:44:17.812133 [debug] [Thread-1 (]: On model.online_retail_project.dimDateTime: Close
+[0m16:44:17.816067 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9c39d16-25c6-4811-a8bf-f1401780fc09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f332870db80>]}
+[0m16:44:17.817288 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimDateTime ............................... [[32mOK[0m in 2.59s]
+[0m16:44:17.818380 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimDateTime
+[0m16:44:17.820198 [debug] [MainThread]: On master: COMMIT
+[0m16:44:17.821032 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:17.821578 [debug] [MainThread]: Connection 'model.online_retail_project.dimDateTime' was properly closed.
+[0m16:44:17.822339 [info ] [MainThread]: 
+[0m16:44:17.822997 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.48 seconds (7.48s).
+[0m16:44:17.823905 [debug] [MainThread]: Command end result
+[0m16:44:17.849537 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.849576 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.852716 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: ROLLBACK
+[0m16:44:17.852989 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: ROLLBACK
+[0m16:44:17.853618 [debug] [Thread-1 (]: On model.online_retail_project.dimCustomer: Close
+[0m16:44:17.853765 [debug] [Thread-1 (]: On model.online_retail_project.dimProducts: Close
+[0m16:44:17.856477 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3bf2e46c-eaea-4bc7-a2da-e8b4ae9eaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3cdaf1970>]}
+[0m16:44:17.856955 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e7c110d7-c174-435c-b3db-e4a076f6395a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcc0bde50>]}
+[0m16:44:17.857501 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimCustomer ............................... [[32mOK[0m in 2.62s]
+[0m16:44:17.858067 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimProducts ............................... [[32mOK[0m in 2.66s]
+[0m16:44:17.858393 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimCustomer
+[0m16:44:17.859084 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimProducts
+[0m16:44:17.860384 [debug] [MainThread]: On master: COMMIT
+[0m16:44:17.861041 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:17.861186 [debug] [MainThread]: On master: COMMIT
+[0m16:44:17.861618 [debug] [MainThread]: Connection 'model.online_retail_project.dimCustomer' was properly closed.
+[0m16:44:17.861968 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:17.862299 [info ] [MainThread]: 
+[0m16:44:17.862502 [debug] [MainThread]: Connection 'model.online_retail_project.dimProducts' was properly closed.
+[0m16:44:17.863033 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.33 seconds (7.33s).
+[0m16:44:17.863169 [info ] [MainThread]: 
+[0m16:44:17.863893 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.41 seconds (7.41s).
+[0m16:44:17.864081 [debug] [MainThread]: Command end result
+[0m16:44:17.865011 [debug] [MainThread]: Command end result
+[0m16:44:17.869230 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:17.872930 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: ROLLBACK
+[0m16:44:17.873729 [debug] [Thread-1 (]: On model.online_retail_project.dimCountry: Close
+[0m16:44:17.878694 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '64e53043-bcfc-4332-87f8-5d8af59efd78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a1a59dee0>]}
+[0m16:44:17.880108 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.dimCountry ................................ [[32mOK[0m in 2.67s]
+[0m16:44:17.881999 [debug] [Thread-1 (]: Finished running node model.online_retail_project.dimCountry
+[0m16:44:17.885117 [debug] [MainThread]: On master: COMMIT
+[0m16:44:17.886166 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:17.887061 [debug] [MainThread]: Connection 'model.online_retail_project.dimCountry' was properly closed.
+[0m16:44:17.888159 [info ] [MainThread]: 
+[0m16:44:17.889618 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.53 seconds (7.53s).
+[0m16:44:17.891071 [debug] [MainThread]: Command end result
+[0m16:44:17.894710 [info ] [MainThread]: 
+[0m16:44:17.895794 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:44:17.896784 [info ] [MainThread]: 
+[0m16:44:17.897772 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:44:17.899257 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.223503, "process_user_time": 7.043209, "process_kernel_time": 0.479537, "process_mem_max_rss": "171376", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:44:17.900468 [debug] [MainThread]: Command `dbt run` succeeded at 16:44:17.900262 after 10.22 seconds
+[0m16:44:17.901378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3327c14140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f332718ce60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f332718e660>]}
+[0m16:44:17.902195 [debug] [MainThread]: Flushing usage events
+[0m16:44:17.939563 [info ] [MainThread]: 
+[0m16:44:17.940959 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:44:17.941859 [info ] [MainThread]: 
+[0m16:44:17.942615 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:44:17.944658 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.082282, "process_user_time": 7.315865, "process_kernel_time": 0.310248, "process_mem_max_rss": "171380", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:44:17.945835 [debug] [MainThread]: Command `dbt run` succeeded at 16:44:17.945630 after 10.08 seconds
+[0m16:44:17.946875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3cff62690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3cfbba030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3cfa18620>]}
+[0m16:44:17.947994 [debug] [MainThread]: Flushing usage events
+[0m16:44:17.953378 [info ] [MainThread]: 
+[0m16:44:17.954336 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:44:17.955115 [info ] [MainThread]: 
+[0m16:44:17.956041 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:44:17.959864 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.189722, "process_user_time": 7.276839, "process_kernel_time": 0.39471, "process_mem_max_rss": "171380", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:44:17.961662 [debug] [MainThread]: Command `dbt run` succeeded at 16:44:17.961411 after 10.19 seconds
+[0m16:44:17.963288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcb51aa80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcaffd2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbcaffe690>]}
+[0m16:44:17.964239 [debug] [MainThread]: Flushing usage events
+[0m16:44:17.971040 [info ] [MainThread]: 
+[0m16:44:17.971944 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:44:17.972638 [info ] [MainThread]: 
+[0m16:44:17.973255 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:44:17.974536 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.33564, "process_user_time": 7.074512, "process_kernel_time": 0.4703, "process_mem_max_rss": "171380", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:44:17.975591 [debug] [MainThread]: Command `dbt run` succeeded at 16:44:17.975437 after 10.34 seconds
+[0m16:44:17.976333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a19394cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a188d1340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8a191458b0>]}
+[0m16:44:17.976975 [debug] [MainThread]: Flushing usage events
+[0m16:44:23.591598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd63b3fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd5e5c8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd5ea3e60>]}
+
+
+============================== 16:44:23.597574 | 348591a6-b193-4453-b5d3-7f0aece7a278 ==============================
+[0m16:44:23.597574 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:44:23.599112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models models/transform/factInvoice.sql', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:24.239763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd449f500>]}
+[0m16:44:24.355702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd63214f0>]}
+[0m16:44:24.357827 [info ] [MainThread]: Registered adapter: sqlserver=1.8.1
+[0m16:44:24.396944 [debug] [MainThread]: checksum: 2f2fb10c73cafe3e79aa104295a8244291492b32b5598ce46af770f7d0bd5194, vars: {}, profile: , target: , version: 1.8.6
+[0m16:44:24.791964 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:24.793435 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:24.806458 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.transform
+[0m16:44:24.866118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd44bf7d0>]}
+[0m16:44:25.108493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd4363380>]}
+[0m16:44:25.114373 [info ] [MainThread]: Found 5 models, 3 sources, 488 macros
+[0m16:44:25.118914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd452cce0>]}
+[0m16:44:25.134951 [info ] [MainThread]: 
+[0m16:44:25.137209 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m16:44:25.140238 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_online-retail-kaggle'
+[0m16:44:25.180828 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:25.182239 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle"
+[0m16:44:25.183500 [debug] [ThreadPool]: On list_online-retail-kaggle: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle"} */
+select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:25.186296 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:25.188274 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:28.299827 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:28.528587 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m16:44:28.530757 [debug] [ThreadPool]: On list_online-retail-kaggle: Close
+[0m16:44:28.541929 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-kaggle, now list_online-retail-kaggle_DWH)
+[0m16:44:28.557818 [debug] [ThreadPool]: dbt-sqlserver
+[0m16:44:28.558912 [debug] [ThreadPool]: Using sqlserver connection "list_online-retail-kaggle_DWH"
+[0m16:44:28.559658 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "connection_name": "list_online-retail-kaggle_DWH"} */
+USE [online-retail-kaggle];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+    )
+    select * from base
+    where [schema] like 'DWH'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m16:44:28.560396 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:44:28.561158 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:29.792738 [debug] [ThreadPool]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:30.030413 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m16:44:30.034117 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: ROLLBACK
+[0m16:44:30.035645 [debug] [ThreadPool]: On list_online-retail-kaggle_DWH: Close
+[0m16:44:30.041281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd5b674a0>]}
+[0m16:44:30.042648 [debug] [MainThread]: On master: COMMIT
+[0m16:44:30.043901 [info ] [MainThread]: Concurrency: 1 threads (target='dwh')
+[0m16:44:30.044995 [info ] [MainThread]: 
+[0m16:44:30.048584 [debug] [Thread-1 (]: Began running node model.online_retail_project.factInvoice
+[0m16:44:30.049542 [info ] [Thread-1 (]: 1 of 1 START sql view model DWH.factInvoice .................................... [RUN]
+[0m16:44:30.050559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-kaggle_DWH, now model.online_retail_project.factInvoice)
+[0m16:44:30.051502 [debug] [Thread-1 (]: Began compiling node model.online_retail_project.factInvoice
+[0m16:44:30.065660 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_retail_project.factInvoice"
+[0m16:44:30.079802 [debug] [Thread-1 (]: Began executing node model.online_retail_project.factInvoice
+[0m16:44:30.134802 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_retail_project.factInvoice"
+[0m16:44:30.148201 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:44:30.149287 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+USE [online-retail-kaggle];
+    
+    
+
+    
+
+    
+    USE [online-retail-kaggle];
+    EXEC('
+        create view "DWH"."factInvoice__dbt_tmp" as 
+
+SELECT 
+    InvoiceNo, Quantity, CONVERT(BIGINT, HASHBYTES(''SHA2_256'', StockCode)) AS Product_key, 
+    CONVERT(BIGINT, HASHBYTES(''SHA2_256'', InvoiceDate)) AS Date_key, CustomerID
+-- FROM "online-retail-kaggle"."STG"."retail_sales"
+FROM "online-retail-kaggle"."dbo"."online_retail";
+    ')
+
+
+[0m16:44:30.150239 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:44:30.151676 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=online-retail.database.windows.net,1433;Database=online-retail-kaggle;UID={adminsql};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.8.1
+[0m16:44:31.417832 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: online-retail-kaggle
+[0m16:44:31.666804 [debug] [Thread-1 (]: SQL status: OK in 2.000 seconds
+[0m16:44:31.675168 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:44:31.676112 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.factInvoice', 'factInvoice__dbt_backup'
+[0m16:44:31.923217 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:31.929640 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:44:31.930959 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+USE [online-retail-kaggle];
+      EXEC sp_rename 'DWH.factInvoice__dbt_tmp', 'factInvoice'
+[0m16:44:32.168674 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:32.191008 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: COMMIT
+[0m16:44:32.198774 [debug] [Thread-1 (]: Applying DROP to: "online-retail-kaggle"."DWH"."factInvoice__dbt_backup"
+[0m16:44:32.208089 [debug] [Thread-1 (]: dbt-sqlserver
+[0m16:44:32.209331 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:44:32.210401 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+
+        USE [online-retail-kaggle];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'online-retail-kaggle'
+        and refs.referenced_schema_name = 'DWH'
+        and refs.referenced_entity_name = 'factInvoice__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m16:44:32.443980 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:32.446166 [debug] [Thread-1 (]: Using sqlserver connection "model.online_retail_project.factInvoice"
+[0m16:44:32.446767 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: /* {"app": "dbt", "dbt_version": "1.8.6", "profile_name": "online_retail_project", "target_name": "dwh", "node_id": "model.online_retail_project.factInvoice"} */
+
+      
+      
+    
+    USE [online-retail-kaggle];
+    EXEC('DROP view IF EXISTS "DWH"."factInvoice__dbt_backup";');
+
+[0m16:44:32.680805 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:44:32.683793 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: ROLLBACK
+[0m16:44:32.684934 [debug] [Thread-1 (]: On model.online_retail_project.factInvoice: Close
+[0m16:44:32.688415 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '348591a6-b193-4453-b5d3-7f0aece7a278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd41b80b0>]}
+[0m16:44:32.689551 [info ] [Thread-1 (]: 1 of 1 OK created sql view model DWH.factInvoice ............................... [[32mOK[0m in 2.64s]
+[0m16:44:32.690630 [debug] [Thread-1 (]: Finished running node model.online_retail_project.factInvoice
+[0m16:44:32.692551 [debug] [MainThread]: On master: COMMIT
+[0m16:44:32.693276 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:32.693947 [debug] [MainThread]: Connection 'model.online_retail_project.factInvoice' was properly closed.
+[0m16:44:32.694671 [info ] [MainThread]: 
+[0m16:44:32.695269 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.56 seconds (7.56s).
+[0m16:44:32.696308 [debug] [MainThread]: Command end result
+[0m16:44:32.759913 [info ] [MainThread]: 
+[0m16:44:32.760878 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:44:32.761714 [info ] [MainThread]: 
+[0m16:44:32.762514 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:44:32.763922 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.293984, "process_user_time": 3.762895, "process_kernel_time": 0.22194, "process_mem_max_rss": "171276", "process_in_blocks": "296", "process_out_blocks": "0"}
+[0m16:44:32.764914 [debug] [MainThread]: Command `dbt run` succeeded at 16:44:32.764770 after 9.30 seconds
+[0m16:44:32.765752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd5c32ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd471ff20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd562da00>]}
+[0m16:44:32.766496 [debug] [MainThread]: Flushing usage events

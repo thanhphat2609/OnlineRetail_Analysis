@@ -7,37 +7,48 @@ class mail_alert:
         self.FROM_EMAIL = "20520270@ms.uit.edu.vn"
 
     # Email content
-    def send_email(self, body, to_email, password) -> None:
-
+    def send_email(self, subject,  body, to_email, password) -> None:
         """
-            Function for sending mail to alert quality check
+        Function for sending mail to alert quality check
 
-            Args:
-                body:
-                to_email:
-                password:
-            
-            Return: None
+        Args:
+            subject: The subject of the email
+            body: The HTML body of the email
+            to_email: Recipient email address
+            password: Sender's email account password
         
+        Return: None
         """
-
         import smtplib
+        from email.mime.multipart import MIMEMultipart
+        from email.mime.text import MIMEText
 
+        # Create the SMTP connection
         smtp = smtplib.SMTP(self.HOST, self.PORT)
 
         status_code, response = smtp.ehlo()
-        # print(f"[*] Echoing the server: {status_code} {response}")
-
+        # Start TLS for secure connection
         status_code, response = smtp.starttls()
-        # print(f"[*] Starting TLS connection: {status_code} {response}")
 
+        # Login to the SMTP server
         status_code, response = smtp.login(self.FROM_EMAIL, password)
-        # print(f"[*] Logging in: {status_code} {response}")
+
+        # Prepare the email message
+        message = MIMEMultipart("alternative")
+        message['Subject'] = subject
+        message['From'] = self.FROM_EMAIL
+        message['To'] = to_email
+
+        # Attach the HTML body
+        html_part = MIMEText(body, 'html')
+        message.attach(html_part)
 
         try:
-            smtp.sendmail(self.FROM_EMAIL, to_email, body)
+            # Send the email
+            smtp.sendmail(self.FROM_EMAIL, to_email, message.as_string())
             # print("Send mail Successfully!!!")
         except Exception as e:
             print("Send mail Failed: ", e)
-        else:
+        finally:
             smtp.quit()
+

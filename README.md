@@ -85,7 +85,7 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 
 ## 4.1. Build Data Pipeline
 
-- **Connect two container for Docker network**:
+- **Connect two container for Docker network (Hadoop, Astro CLI Project)**:
 
 docker network connect hadoop_default oneline-retail-project_5f80e5-webserver-1
 
@@ -111,13 +111,15 @@ docker network connect hadoop_default oneline-retail-project_5f80e5-postgres-1
 ![image](https://github.com/user-attachments/assets/9cd81b62-aa6f-4886-8eb8-bfed05144ee5)
 
 - **STAGING Phase**
+
 ![image](https://github.com/user-attachments/assets/6ce6f301-3c71-4aa4-807e-3d2199b2a386)
 
 - **DATA WAREHOUSE Phase**
+
 ![image](https://github.com/user-attachments/assets/0088105c-0431-48ae-9cfc-63c8dad9d1d6)
 
 - **DATA QUALITY check for Data MODEL**
-
+Not Updated Yet. (Dont know what to check for Data Modelling)
 
 # **5. Report**
 
