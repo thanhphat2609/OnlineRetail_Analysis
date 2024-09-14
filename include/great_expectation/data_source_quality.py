@@ -31,9 +31,9 @@ file_path = '/Online_Retail_Analysis/datalake/online_retail.csv'
 
 # Task 1: Check if File Exists
 if file_exists(client_hdfs, file_path):
-    message_task_1 = f"<strong>Task 1:</strong> Check file exists. File: {file_path} exists => <span style='color:green;'>Success</span>"
+    message_task_1 = f"<strong>Task 1:</strong> Check file exists. File: {file_path} exists => <strong><span style='color:green;'>Success</span></strong>"
 else:
-    message_task_1 = f"<strong>Task 1:</strong> Check file exists. File: {file_path} does not exist => <span style='color:red;'>Failed</span>"
+    message_task_1 = f"<strong>Task 1:</strong> Check file exists. File: {file_path} does not exist => <strong><span style='color:red;'>Failed</span></strong>"
 
 with client_hdfs.read('/Online_Retail_Analysis/datalake/online_retail.csv', encoding='utf-8') as reader:
     df = pd.read_csv(reader)
@@ -65,14 +65,14 @@ for index, result in enumerate(validation_results['results']):
 
     if result['success']:
         if expectation_type == "expect_table_columns_to_match_set":
-            message = f"<strong>Task {task_check}:</strong> Check schema. All columns match => <span style='color:green;'>Success</span>"
+            message = f"<strong>Task {task_check}:</strong> Check schema. All columns match => <strong><span style='color:green;'>Success</span></strong>"
         else:
-            message = f"<strong>Task {task_check}:</strong> Check null value for column: {column} => <span style='color:green;'>Success</span>"
+            message = f"<strong>Task {task_check}:</strong> Check null value for column: {column} => <strong><span style='color:green;'>Success</span></strong>"
     else:
         if expectation_type == "expect_table_columns_to_match_set":
-            message = f"<strong>Task {task_check}:</strong> Check schema. Columns do not match => <span style='color:red;'>Failed</span>"
+            message = f"<strong>Task {task_check}:</strong> Check schema. Columns do not match => <strong><span style='color:red;'>Failed</span></strong>"
         else:
-            message = f"<strong>Task {task_check}:</strong> Check null value for column: {column} => <span style='color:red;'>Failed</span>"
+            message = f"<strong>Task {task_check}:</strong> Check null value for column: {column} => <strong><span style='color:red;'>Failed</span></strong>"
     
     task_messages.append(message)
 
