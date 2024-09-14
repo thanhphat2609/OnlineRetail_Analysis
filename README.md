@@ -96,14 +96,6 @@ Container for Hadoop
 Container for Superset
 ![image](https://github.com/user-attachments/assets/7c9c1338-3e68-4b08-bc0d-8ed1adaf5141)
 
-- **Connect two container with Docker network (Hadoop, Astro CLI Project) for accessing Hadoop Storage**:
-
-docker network connect hadoop_default oneline-retail-project_5f80e5-webserver-1
-
-docker network connect hadoop_default oneline-retail-project_5f80e5-scheduler-1
-
-docker network connect hadoop_default oneline-retail-project_5f80e5-postgres-1
-
 - **HDFS Data Lake Storage**:
 ![image](https://github.com/user-attachments/assets/cec9ece6-abc0-411a-bff4-945905314aae)
 
