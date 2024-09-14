@@ -48,7 +48,7 @@ _Table of Contents_
 - **Data Source**: These include the various systems from which data is **extracted**, such as: Relational Database, File systems, SaaS applications, Real-time data.
 - **Staging**: Extract data from Source into Files of Lakehouse (csv, parquet) or Delta Tables.
 - **Data Warehouse**: Data in the data warehouse is organized according to a unified data model, which makes it easy to query and analyze.
-- **Analytics**: This last step we will use tools and techniques to analyze the data in the data warehouse, such as: Power BI, Tableau, ..
+- **Analytics**: This last step we will use tools and techniques to analyze the data in the data warehouse, such as: Power BI, Tableau, Superset ..
 
 ## 2.2. Physical Architecture
 ![dockerarchitecture](https://github.com/user-attachments/assets/46e6d41d-dd89-48b5-82a6-3decda246389)
@@ -84,6 +84,20 @@ Link for specific dataset in Kaggle: [Online_Retail_Dataset](https://www.kaggle.
 # **4. End to End Solution**
 
 ## 4.1. Build Data Pipeline
+
+- **Container**
+
+Container for project
+
+![alt text](image.png)
+
+Container for Hadoop
+
+![alt text](image-1.png)
+
+Container for Superset
+
+![alt text](image-2.png)
 
 - **Connect two container for Docker network (Hadoop, Astro CLI Project)**:
 
