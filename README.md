@@ -111,7 +111,7 @@ Container for Superset
 ![image](https://github.com/user-attachments/assets/30275f4d-0979-4978-9e40-97946700ecee)
 
 - **DATA QUALITY check for SOURCE**
-![image](https://github.com/user-attachments/assets/9cd81b62-aa6f-4886-8eb8-bfed05144ee5)
+![image](https://github.com/user-attachments/assets/4d543f93-a2c0-4559-a0bb-cfa32b3a9be8)
 
 - **STAGING Phase**
 
