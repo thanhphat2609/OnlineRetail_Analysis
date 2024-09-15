@@ -37,7 +37,7 @@ _Table of Contents_
 
 - **Apache Airflow**: Apache Airflow is a workflow automation tool that allows you to define, schedule, and monitor complex data workflows. It acts like a task scheduler for your data engineering processes, ensuring that each step in your pipeline is executed in the correct order and dependencies are managed efficiently.
 
-- **Data Build Tools (DBT)**: DBT is a data transformation tool that enables you to build and manage your data models using SQL. It facilitates transformations and data modeling within your data warehouse, integrating with workflow orchestrators like Airflow to automate the execution of data transformation tasks and ensuring that your data is ready for analysis.
+- **Data Build Tool (DBT)**: DBT is a data transformation tool that enables you to build and manage your data models using SQL. It facilitates transformations and data modeling within your data warehouse, integrating with workflow orchestrators like Airflow to automate the execution of data transformation tasks and ensuring that your data is ready for analysis.
 
 
 # **2. Data Architecture**
@@ -57,7 +57,7 @@ _Table of Contents_
 
 - **Data Storage (Hadoop HDFS)**: The ingested CSV data is stored in a data lake, leveraging Hadoop for distributed storage, allowing scalability and fault tolerance. The storage layer is named Online_Retail_Analysis.
 
-- **Orchestration Layer**: This layer manages workflow automation, data quality checks and data transformation using **Python, Great_Expectations, Data Build Tools (DBT)**.
+- **Orchestration Layer**: This layer manages workflow automation, data quality checks and data transformation using **Python, Great_Expectations, Data Build Tool (DBT)**.
 
 - **Reporting Layer**: The transformed data is pushed to an SQL database using SSMS (SQL Server Management Studio) for querying. Apache Superset then accesses this structured data for generating insights and reports, allowing stakeholders to visualize and make decisions based on the processed data.
 
