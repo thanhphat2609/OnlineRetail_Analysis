@@ -51,7 +51,7 @@ _Table of Contents_
 - **Analytics**: This last step we will use tools and techniques to analyze the data in the data warehouse, such as: Power BI, Tableau, Superset ..
 
 ## 2.2. Physical Architecture
-![dockerarchitecture](https://github.com/user-attachments/assets/ccfe5173-93e4-4049-9391-d2e6e1aa13f5)
+![dockerarchitecture](https://github.com/user-attachments/assets/04c9c359-8dbb-40d7-8e52-06cfcf7d9f97)
 
 - **Source Data (CSV from Kaggle)**: The project sources data from a Kaggle Online Retail dataset in CSV format, representing the initial stage.
 
