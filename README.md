@@ -18,7 +18,7 @@ _Table of Contents_
 
 - [**5. Report**](#5-report)
   * [5.1. Data Modelling](#51-data-modelling)
-  * [5.2. Report](#52-report)
+  * [5.2. Dashboard](#52-dashboard)
 
 ---
 
@@ -131,6 +131,6 @@ Not Updated Yet. (Dont know what to check for Data Modelling)
 
 ![image](https://github.com/user-attachments/assets/04036de9-693b-4503-89df-e74cef787b09)
 
-## 5.2. Report
+## 5.2. Dashboard
 
 ![image](https://github.com/user-attachments/assets/089233d7-b83f-4698-a363-52c5ef9add3e)
