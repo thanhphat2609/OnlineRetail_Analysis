@@ -129,7 +129,6 @@ Not Updated Yet. (Dont know what to check for Data Modelling)
 
 ## 5.1. Data Modelling
 
-- **Dataset on Superset**:
 ![image](https://github.com/user-attachments/assets/04036de9-693b-4503-89df-e74cef787b09)
 
 ## 5.2. Report
