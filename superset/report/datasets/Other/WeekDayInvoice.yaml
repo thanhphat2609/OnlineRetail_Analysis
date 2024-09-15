@@ -1,0 +1,59 @@
+table_name: WeekDayInvoice
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: DWH
+sql: "SELECT \r\n    CASE \r\n        WHEN d.weekday = 1 THEN 'Monday'\r\n       \
+  \ WHEN d.weekday = 2 THEN 'Tuesday'\r\n        WHEN d.weekday = 3 THEN 'Wednesday'\r\
+  \n        WHEN d.weekday = 4 THEN 'Thursday'\r\n        WHEN d.weekday = 5 THEN\
+  \ 'Friday'\r\n        WHEN d.weekday = 6 THEN 'Saturday'\r\n        ELSE 'Invalid\
+  \ Day'\r\n    END AS WeekDay,  \r\n    COUNT(DISTINCT InvoiceNo) AS TotalInvoice\r\
+  \nFROM factInvoice f \r\nINNER JOIN dimDateTime d ON f.Date_key = d.Date_key\r\n\
+  GROUP BY d.weekday\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: acea8ca6-2a7d-47c7-95bb-22b682fa3c7f
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: WeekDay
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: TotalInvoice
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 23c3774c-b162-4fa8-a44b-1bb6aed916ff

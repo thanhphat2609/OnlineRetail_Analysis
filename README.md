@@ -134,4 +134,4 @@ Not Updated Yet. (Dont know what to check for Data Modelling)
 
 ## 5.2. Report
 
-Not Updated Yet
+![image](https://github.com/user-attachments/assets/af741614-4d7d-42fd-a586-5e27bb23b955)

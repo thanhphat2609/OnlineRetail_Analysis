@@ -1,0 +1,13 @@
+database_name: Other
+sqlalchemy_uri: mssql+pymssql://thanhphat:XXXXXXXXXX@online-retail.database.windows.net:1433/online-retail-kaggle
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 23c3774c-b162-4fa8-a44b-1bb6aed916ff
+version: 1.0.0
